@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+Disallow: /firebase-debug.log
+Disallow: /.git/
+Disallow: /node_modules/
+
+# AI 크롤러 허용 (GEO 최적화)
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+Sitemap: https://bs-pb2.pages.dev/sitemap.xml

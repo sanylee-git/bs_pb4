@@ -1,0 +1,27 @@
+{
+  "name": "귀멸의 칼날 상현 닮은꼴 AI",
+  "short_name": "상현닮은꼴",
+  "description": "귀멸의 칼날 상현 닮은꼴 무료 AI 분석기. 내 얼굴이 코쿠시보·도우마·아카자 등 어떤 상현 귀신과 닮았는지 즉시 분석!",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#05050f",
+  "theme_color": "#c0392b",
+  "orientation": "portrait-primary",
+  "lang": "ko",
+  "categories": ["entertainment", "games"],
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/douma.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "label": "귀멸의 칼날 상현 닮은꼴 AI 분석기"
+    }
+  ]
+}
