@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <!-- Google tag (gtag.js) -->
+  <!-- ============================================================
+       트래킹 스크립트 — 새 프로젝트 시 아래 ID 를 교체하세요
+       ============================================================ -->
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YHJ00H7NBL"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-YHJ00H7NBL');
-    // ── GEO: AI 서비스 유입 추적 ──
     (function(){
       var ref = document.referrer || '';
       var aiMap = {
         'chat.openai.com':'ChatGPT','perplexity.ai':'Perplexity',
-        'gemini.google.com':'Gemini','bard.google.com':'Bard',
-        'claude.ai':'Claude','copilot.microsoft.com':'Copilot',
-        'you.com':'You.com','phind.com':'Phind','kagi.com':'Kagi'
+        'gemini.google.com':'Gemini','claude.ai':'Claude',
+        'copilot.microsoft.com':'Copilot','you.com':'You.com'
       };
       for (var d in aiMap) {
         if (ref.indexOf(d) !== -1) {
@@ -29,787 +30,129 @@
   <!-- Microsoft Clarity -->
   <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "vkeren3kxo");
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window,document,"clarity","script","vkeren3kxo");
   </script>
+
+  <!-- ============================================================
+       기본 메타 — site.config.js 로드 후 main.js 가 자동 갱신합니다
+       ============================================================ -->
   <meta charset="UTF-8" />
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" href="/favicon.ico">
-  <link rel="manifest" href="/manifest.json">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="상현닮은꼴">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>상현 닮은꼴 찾기 | 귀멸의 칼날 AI 분석기</title>
-  <meta name="description" content="귀멸의 칼날 상현 닮은꼴 AI 분석기! 내 얼굴이 코쿠시보·도우마·아카자 등 어떤 상현 귀신과 닮았는지 AI로 분석해보세요. 웹캠 또는 사진 업로드 지원.">
-  <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#05050f">
-  <link rel="canonical" href="https://bs-pb2.pages.dev/">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://bs-pb2.pages.dev/">
-  <meta property="og:site_name" content="귀멸의 칼날 상현 닮은꼴">
-  <meta property="og:title" content="귀멸의 칼날 상현 닮은꼴 AI 분석기">
-  <meta property="og:description" content="귀멸의 칼날 상현 닮은꼴 무료 AI 분석기! 코쿠시보·도우마·아카자·한텐구·교코·다키 중 내 얼굴과 가장 닮은 상현 귀신을 AI로 즉시 분석해보세요. 웹캠·사진 업로드 지원.">
-  <meta property="og:image" content="https://bs-pb2.pages.dev/images/douma.png">
-  <meta property="og:image:width" content="1736">
-  <meta property="og:image:height" content="1050">
-  <meta property="og:image:alt" content="귀멸의 칼날 상현 닮은꼴 AI 분석기">
-  <meta property="og:locale" content="ko_KR">
+  <title>로딩 중...</title>
+  <meta name="description"  content="">
+  <meta name="keywords"     content="">
+  <meta name="robots"       content="index, follow">
+  <meta name="theme-color"  content="#05050f">
+  <meta name="apple-mobile-web-app-capable"          content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title"            content="">
+
+  <!-- OG / Twitter -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="">
+  <meta property="og:site_name"   content="">
+  <meta property="og:title"       content="">
+  <meta property="og:description" content="">
+  <meta property="og:image"       content="">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height"content="630">
+  <meta property="og:image:alt"   content="">
+  <meta property="og:image:type"  content="image/png">
+  <meta property="og:locale"      content="ko_KR">
   <meta property="og:locale:alternate" content="en_US">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="귀멸의 칼날 상현 닮은꼴 AI 분석기">
-  <meta name="twitter:description" content="귀멸의 칼날 상현 닮은꼴 무료 AI 분석기! 코쿠시보·도우마·아카자·한텐구·교코·다키 중 내 얼굴과 가장 닮은 상현 귀신을 AI로 즉시 분석해보세요. 웹캠·사진 업로드 지원.">
-  <meta name="twitter:image" content="https://bs-pb2.pages.dev/images/douma.png">
-  <meta name="twitter:image:alt" content="귀멸의 칼날 상현 닮은꼴 AI 분석기">
-  <meta property="og:image:type" content="image/png">
-  <meta name="keywords" content="귀멸의 칼날, 상현, 닮은꼴, AI 분석, 코쿠시보, 도우마, 아카자, 한텐구, 교코, 다키, 규타로, 鬼滅の刃, demon slayer, upper moon, lookalike, face analysis, 귀신, 귀살대">
-  <link rel="alternate" hreflang="ko" href="https://bs-pb2.pages.dev/">
-  <link rel="alternate" hreflang="en" href="https://bs-pb2.pages.dev/">
-  <link rel="alternate" hreflang="x-default" href="https://bs-pb2.pages.dev/">
+  <meta name="twitter:card"       content="summary_large_image">
+  <meta name="twitter:title"      content="">
+  <meta name="twitter:description"content="">
+  <meta name="twitter:image"      content="">
+  <meta name="twitter:image:alt"  content="">
+  <link rel="canonical" href="">
+  <link rel="alternate" hreflang="ko"       href="">
+  <link rel="alternate" hreflang="en"       href="">
+  <link rel="alternate" hreflang="x-default"href="">
+
+  <!-- Google AdSense (새 프로젝트 시 ID 교체) -->
   <meta name="google-adsense-account" content="ca-pub-9688338422874533">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9688338422874533" crossorigin="anonymous"></script>
+
+  <!-- Favicons & PWA -->
+  <link rel="icon"         href="/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/favicon.ico">
+  <link rel="manifest"     href="/manifest.json">
+
+  <!-- Google Fonts (필요 시 폰트 교체) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+
+  <!-- 스타일 -->
   <link rel="stylesheet" href="/style.css">
-  <style>
-    /* ── index 전용 스타일 ── */
-    .wrapper {
-      position: relative;
-      z-index: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: calc(var(--nav-h) + 32px) 16px 0;
-    }
-
-    /* 헤더 */
-    .site-header {
-      width: 100%;
-      text-align: center;
-      padding: 32px 20px 16px;
-    }
-    .header-deco {
-      font-family: 'Cinzel Decorative', cursive;
-      font-size: clamp(10px, 2vw, 12px);
-      letter-spacing: 6px;
-      color: var(--gold);
-      text-transform: uppercase;
-      opacity: 0.8;
-      margin-bottom: 12px;
-      animation: fadeSlideDown 0.9s ease both;
-    }
-    .title-jp {
-      font-size: clamp(30px, 7vw, 58px);
-      font-weight: 900;
-      line-height: 1.05;
-      letter-spacing: 2px;
-      background: linear-gradient(135deg, #ffffff 0%, var(--gold) 50%, var(--crimson) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      filter: drop-shadow(0 0 20px rgba(192,57,43,0.5));
-      animation: fadeSlideDown 0.9s 0.08s ease both;
-    }
-    .title-sub {
-      font-size: clamp(13px, 2.5vw, 17px);
-      color: rgba(255,255,255,0.5);
-      letter-spacing: 3px;
-      margin-top: 10px;
-      animation: fadeSlideDown 0.9s 0.16s ease both;
-    }
-    .badge-row {
-      display: flex;
-      justify-content: center;
-      gap: 6px;
-      margin-top: 16px;
-      flex-wrap: wrap;
-      animation: fadeSlideDown 0.9s 0.24s ease both;
-    }
-    .badge {
-      font-size: 11px;
-      padding: 4px 12px;
-      border-radius: 20px;
-      border: 1px solid rgba(192,57,43,0.5);
-      background: rgba(192,57,43,0.1);
-      color: #ff8a80;
-      letter-spacing: 2px;
-    }
-    .divider {
-      width: min(500px, 90%);
-      height: 1px;
-      background: linear-gradient(90deg, transparent, var(--crimson), var(--gold), var(--crimson), transparent);
-      margin: 24px auto;
-      animation: fadeSlideDown 0.9s 0.28s ease both;
-    }
-
-    /* ── AI 도구 카드 ── */
-    .main-card {
-      background: var(--card-bg);
-      border: 1px solid rgba(192,57,43,0.3);
-      border-radius: 24px;
-      padding: 28px 24px;
-      width: min(520px, 100%);
-      box-shadow:
-        0 0 60px rgba(192,57,43,0.1),
-        0 0 120px rgba(92,10,138,0.08),
-        inset 0 1px 0 rgba(255,255,255,0.05);
-      backdrop-filter: blur(20px);
-      animation: fadeSlideUp 0.9s 0.32s ease both;
-      position: relative;
-    }
-
-    /* 스캔 프레임 */
-    .scan-frame {
-      position: relative;
-      width: 240px;
-      height: 240px;
-      margin: 0 auto 22px;
-    }
-    .scan-frame::before, .scan-frame::after,
-    .scan-inner::before, .scan-inner::after {
-      content: '';
-      position: absolute;
-      width: 24px; height: 24px;
-      border-color: var(--gold);
-      border-style: solid;
-    }
-    .scan-frame::before { top:0; left:0;  border-width:3px 0 0 3px; border-radius:4px 0 0 0; }
-    .scan-frame::after  { top:0; right:0; border-width:3px 3px 0 0; border-radius:0 4px 0 0; }
-    .scan-inner::before { bottom:0; left:0;  border-width:0 0 3px 3px; border-radius:0 0 0 4px; }
-    .scan-inner::after  { bottom:0; right:0; border-width:0 3px 3px 0; border-radius:0 0 4px 0; }
-    .scan-inner { position: absolute; inset: 0; }
-
-    .ring {
-      position: absolute;
-      inset: -12px;
-      border-radius: 50%;
-      border: 1.5px solid transparent;
-      border-top-color: var(--crimson);
-      border-right-color: var(--gold);
-      animation: spin 3s linear infinite;
-      opacity: 0;
-      transition: opacity 0.4s;
-    }
-    .ring-2 {
-      inset: -20px;
-      border-top-color: var(--purple);
-      border-bottom-color: var(--crimson);
-      animation: spin 5s linear infinite reverse;
-    }
-    .scanning .ring { opacity: 1; }
-
-    #webcam-container {
-      width: 220px; height: 220px;
-      overflow: hidden;
-      border-radius: 16px;
-      position: absolute;
-      top: 50%; left: 50%;
-      transform: translate(-50%, -50%);
-      background: rgba(0,0,0,0.5);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    #webcam-container canvas,
-    #webcam-container video,
-    #preview-img {
-      width: 220px; height: 220px;
-      object-fit: cover;
-      border-radius: 16px;
-    }
-
-    .cam-placeholder {
-      display: flex; flex-direction: column;
-      align-items: center; gap: 10px;
-      color: rgba(255,255,255,0.3);
-      font-size: 13px; text-align: center;
-    }
-    .cam-placeholder svg { width: 48px; height: 48px; opacity: 0.3; }
-
-    .scan-line {
-      position: absolute;
-      left: 8px; right: 8px; height: 2px;
-      background: linear-gradient(90deg, transparent, var(--crimson), rgba(255,0,0,0.8), var(--crimson), transparent);
-      top: 8px;
-      animation: scanLine 2s ease-in-out infinite;
-      opacity: 0;
-      border-radius: 1px;
-      box-shadow: 0 0 8px var(--crimson);
-    }
-    .scanning .scan-line { opacity: 1; }
-
-    /* 탭 */
-    .mode-tabs {
-      display: flex; gap: 8px;
-      margin-bottom: 18px;
-      background: rgba(255,255,255,0.04);
-      border-radius: 12px; padding: 4px;
-    }
-    .tab-btn {
-      flex: 1; padding: 10px;
-      border: none; border-radius: 9px;
-      background: transparent;
-      color: rgba(255,255,255,0.45);
-      font-family: 'Noto Sans KR', sans-serif;
-      font-size: 13px; cursor: pointer;
-      transition: all 0.25s; letter-spacing: 1px;
-      min-height: 44px;
-    }
-    .tab-btn.active {
-      background: linear-gradient(135deg, var(--deep-crimson), var(--purple));
-      color: #fff;
-      box-shadow: 0 2px 12px rgba(192,57,43,0.4);
-    }
-
-    /* 버튼 */
-    .btn-group { display: flex; gap: 10px; margin-top: 20px; }
-    .btn-main {
-      flex: 1; padding: 14px;
-      border: none; border-radius: 12px;
-      font-family: 'Noto Sans KR', sans-serif;
-      font-size: 14px; font-weight: 700;
-      letter-spacing: 2px; cursor: pointer;
-      position: relative; overflow: hidden;
-      transition: all 0.3s; min-height: 50px;
-    }
-    .btn-main::before {
-      content: '';
-      position: absolute; inset: 0;
-      background: linear-gradient(135deg, rgba(255,255,255,0.15), transparent);
-      opacity: 0; transition: opacity 0.3s;
-    }
-    .btn-main:hover::before { opacity: 1; }
-    .btn-main:active { transform: scale(0.97); }
-    .btn-scan {
-      background: linear-gradient(135deg, #8b0000 0%, #c0392b 50%, #8b0000 100%);
-      background-size: 200% 100%;
-      color: #fff;
-      box-shadow: 0 4px 20px rgba(192,57,43,0.5);
-      animation: shimmer 3s linear infinite;
-    }
-    .btn-scan:hover { box-shadow: 0 6px 28px rgba(192,57,43,0.7); transform: translateY(-1px); }
-    .btn-scan:disabled { opacity: 0.4; cursor: not-allowed; transform: none; animation: none; }
-    .btn-reset {
-      background: rgba(255,255,255,0.07);
-      color: rgba(255,255,255,0.6);
-      border: 1px solid rgba(255,255,255,0.1);
-      flex: 0 0 auto; padding: 14px 18px; font-size: 18px;
-    }
-    .btn-reset:hover { background: rgba(255,255,255,0.12); color: #fff; }
-
-    /* 업로드 */
-    .upload-area {
-      border: 2px dashed rgba(192,57,43,0.35);
-      border-radius: 14px; padding: 28px;
-      text-align: center; cursor: pointer;
-      transition: all 0.3s;
-      background: rgba(192,57,43,0.04); display: none;
-    }
-    .upload-area.active-tab { display: block; }
-    .upload-area:hover { border-color: var(--crimson); background: rgba(192,57,43,0.08); }
-    .upload-area svg { width: 36px; height: 36px; color: var(--crimson); margin-bottom: 8px; }
-    .upload-area p { font-size: 13px; color: rgba(255,255,255,0.5); }
-    .upload-area p strong { color: var(--gold); }
-    #file-input { display: none; }
-
-    /* 로딩 */
-    .loading-overlay {
-      position: absolute; inset: 0;
-      background: rgba(5,5,15,0.88);
-      border-radius: 24px;
-      display: flex; flex-direction: column;
-      align-items: center; justify-content: center; gap: 14px;
-      z-index: 10; opacity: 0; pointer-events: none; transition: opacity 0.3s;
-    }
-    .loading-overlay.show { opacity: 1; pointer-events: all; }
-    .spinner {
-      width: 40px; height: 40px;
-      border: 3px solid rgba(192,57,43,0.2);
-      border-top-color: var(--crimson);
-      border-right-color: var(--gold);
-      border-radius: 50%;
-      animation: spin 0.8s linear infinite;
-    }
-    .loading-text { font-size: 12px; letter-spacing: 3px; color: rgba(255,255,255,0.5); }
-
-    /* 결과 */
-    #result-section { width: min(520px, 100%); margin-top: 18px; display: none; }
-    #result-section.show { display: block; animation: fadeSlideUp 0.6s ease both; }
-
-    .result-hero {
-      background: var(--card-bg);
-      border: 1px solid rgba(240,192,64,0.3);
-      border-radius: 20px; padding: 26px;
-      text-align: center;
-      backdrop-filter: blur(20px);
-      margin-bottom: 14px;
-      animation: pulseGlow 3s ease-in-out infinite;
-    }
-    .demon-eye { width: 60px; height: 60px; margin: 0 auto 14px; }
-    .demon-eye svg { width: 100%; height: 100%; }
-    .result-label { font-size: 11px; letter-spacing: 4px; color: var(--gold); opacity: 0.8; margin-bottom: 8px; }
-    .result-name {
-      font-size: clamp(28px, 7vw, 42px); font-weight: 900;
-      background: linear-gradient(135deg, #fff 0%, var(--gold) 60%);
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
-      filter: drop-shadow(0 0 16px rgba(240,192,64,0.4));
-      letter-spacing: 3px; margin-bottom: 4px;
-    }
-    .result-rank { font-size: 13px; color: var(--crimson); letter-spacing: 3px; margin-bottom: 18px; }
-    .result-desc { font-size: 13px; color: rgba(255,255,255,0.55); line-height: 1.7; max-width: 320px; margin: 0 auto 18px; }
-    .result-score-big { font-size: 52px; font-weight: 900; color: var(--gold); text-shadow: 0 0 30px rgba(240,192,64,0.5); line-height: 1; }
-    .result-score-label { font-size: 11px; color: rgba(255,255,255,0.4); letter-spacing: 2px; margin-top: 4px; }
-
-    .all-results {
-      background: var(--card-bg);
-      border: 1px solid rgba(192,57,43,0.2);
-      border-radius: 20px; padding: 22px;
-      backdrop-filter: blur(20px);
-    }
-    .all-results h3 { font-size: 11px; letter-spacing: 4px; color: rgba(255,255,255,0.4); margin-bottom: 16px; text-transform: uppercase; }
-    .pred-row { display: flex; align-items: center; gap: 12px; margin-bottom: 13px; }
-    .pred-row:last-child { margin-bottom: 0; }
-    .pred-name { font-size: 13px; font-weight: 700; min-width: 72px; color: rgba(255,255,255,0.85); }
-    .pred-bar-wrap { flex: 1; height: 6px; background: rgba(255,255,255,0.07); border-radius: 3px; overflow: hidden; }
-    .pred-bar { height: 100%; border-radius: 3px; transition: width 0.8s cubic-bezier(0.16,1,0.3,1); width: 0%; }
-    .pred-bar.top { background: linear-gradient(90deg, var(--deep-crimson), var(--gold)); box-shadow: 0 0 8px rgba(240,192,64,0.4); }
-    .pred-bar.other { background: linear-gradient(90deg, rgba(92,10,138,0.8), rgba(192,57,43,0.6)); }
-    .pred-pct { font-size: 12px; color: rgba(255,255,255,0.5); min-width: 38px; text-align: right; }
-    .pred-pct.top { color: var(--gold); font-weight: 700; }
-
-    /* 상태 메시지 */
-    #status-msg { text-align: center; font-size: 12px; color: rgba(255,255,255,0.3); margin-top: 12px; letter-spacing: 1px; min-height: 18px; }
-
-    /* ── 콘텐츠 섹션 (가이드) ── */
-    .guide-section {
-      width: min(760px, 100%);
-      margin-top: 50px;
-    }
-    .guide-title {
-      text-align: center;
-      font-size: clamp(18px, 4vw, 26px);
-      font-weight: 900;
-      color: var(--gold);
-      letter-spacing: 2px;
-      margin-bottom: 6px;
-    }
-    .guide-title-sub {
-      text-align: center;
-      font-size: 13px;
-      color: rgba(255,255,255,0.35);
-      letter-spacing: 2px;
-      margin-bottom: 28px;
-    }
-    .guide-card {
-      background: var(--card-bg);
-      border: 1px solid rgba(192,57,43,0.2);
-      border-radius: 20px;
-      padding: 26px 24px;
-      margin-bottom: 16px;
-      backdrop-filter: blur(16px);
-    }
-    .guide-card h2 {
-      font-size: 16px; font-weight: 700;
-      color: #fff;
-      margin-bottom: 12px;
-      padding-bottom: 10px;
-      border-bottom: 1px solid rgba(192,57,43,0.2);
-      display: flex; align-items: center; gap: 8px;
-    }
-    .guide-card h2 .rank-badge {
-      font-size: 10px;
-      padding: 2px 10px;
-      border-radius: 20px;
-      background: rgba(192,57,43,0.2);
-      color: #ff8a80;
-      letter-spacing: 1px;
-      font-weight: 500;
-    }
-    .guide-card p {
-      font-size: 14px;
-      color: rgba(255,255,255,0.6);
-      line-height: 1.85;
-    }
-    .char-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 14px;
-      margin-bottom: 16px;
-    }
-    /* 캐릭터 카드 이미지 레이아웃 */
-    .char-card-inner {
-      display: flex;
-      gap: 16px;
-      align-items: flex-start;
-    }
-    .char-img-wrap {
-      flex-shrink: 0;
-      width: 100px;
-      height: 120px;
-      border-radius: 12px;
-      overflow: hidden;
-      border: 1px solid rgba(192,57,43,0.3);
-      background: rgba(0,0,0,0.3);
-    }
-    .char-img-wrap img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: top center;
-      display: block;
-    }
-    .char-card-text { flex: 1; min-width: 0; }
-    @media (max-width: 420px) {
-      .char-card-inner { flex-direction: column; }
-      .char-img-wrap { width: 100%; height: 180px; }
-    }
-
-    /* How-to 섹션 */
-    .how-to { display: flex; flex-direction: column; gap: 12px; }
-    .how-step {
-      display: flex; align-items: flex-start; gap: 14px;
-    }
-    .step-num {
-      flex-shrink: 0;
-      width: 32px; height: 32px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--deep-crimson), var(--crimson));
-      display: flex; align-items: center; justify-content: center;
-      font-size: 13px; font-weight: 700; color: #fff;
-    }
-    .step-text { font-size: 14px; color: rgba(255,255,255,0.65); line-height: 1.7; }
-    .step-text strong { color: #fff; }
-
-    /* FAQ */
-    .faq-item { margin-bottom: 20px; }
-    .faq-item:last-child { margin-bottom: 0; }
-    .faq-q { font-size: 14px; font-weight: 700; color: var(--gold); margin-bottom: 6px; }
-    .faq-a { font-size: 13px; color: rgba(255,255,255,0.6); line-height: 1.8; }
-
-    /* Disqus */
-    .disqus-wrap {
-      width: min(760px, 100%);
-      background: var(--card-bg);
-      border: 1px solid rgba(192,57,43,0.2);
-      border-radius: 20px;
-      padding: 28px 24px;
-      margin-top: 16px;
-      backdrop-filter: blur(16px);
-    }
-    .disqus-title {
-      font-size: 14px; font-weight: 700;
-      color: rgba(255,255,255,0.5);
-      letter-spacing: 3px; text-transform: uppercase;
-      margin-bottom: 20px;
-    }
-
-    /* ── 애니메이션 ── */
-    @keyframes fadeSlideDown {
-      from { opacity: 0; transform: translateY(-18px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes fadeSlideUp {
-      from { opacity: 0; transform: translateY(22px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes shimmer {
-      0%   { background-position: 200% 0; }
-      100% { background-position: -200% 0; }
-    }
-    @keyframes scanLine {
-      0%   { top: 8px; }
-      50%  { top: calc(100% - 8px); }
-      100% { top: 8px; }
-    }
-    @keyframes pulseGlow {
-      0%,100% { box-shadow: 0 0 40px rgba(240,192,64,0.08), 0 0 80px rgba(192,57,43,0.06); }
-      50%      { box-shadow: 0 0 60px rgba(240,192,64,0.18), 0 0 100px rgba(192,57,43,0.12); }
-    }
-
-    /* ── SNS 공유 ── */
-    .share-result-card {
-      margin-top: 14px;
-      background: var(--card-bg);
-      border: 1px solid rgba(240,192,64,0.2);
-      border-radius: 20px;
-      padding: 20px;
-      text-align: center;
-      backdrop-filter: blur(16px);
-      animation: fadeSlideUp 0.5s ease both;
-    }
-    .share-result-label {
-      font-size: 11px; letter-spacing: 4px;
-      color: rgba(255,255,255,0.35);
-      text-transform: uppercase; margin-bottom: 14px;
-    }
-    .share-btns {
-      display: flex; gap: 8px;
-      justify-content: center; flex-wrap: wrap;
-    }
-    .share-btn {
-      padding: 10px 16px; border: none;
-      border-radius: 10px; font-size: 13px; font-weight: 700;
-      cursor: pointer; transition: all 0.22s; letter-spacing: 0.5px;
-      min-height: 42px; display: flex; align-items: center; gap: 6px;
-      font-family: 'Noto Sans KR', sans-serif;
-    }
-    .share-btn:hover { transform: translateY(-2px); filter: brightness(1.18); }
-    .share-btn:active { transform: scale(0.95); }
-    .s-save { background: linear-gradient(135deg,#c0392b,#8b0000); color:#fff; }
-    .s-native { background: linear-gradient(135deg,#5c0a8a,#8b0080); color:#fff; }
-    .s-twitter { background:#000; color:#fff; }
-    .s-facebook { background:#1877f2; color:#fff; }
-    .s-threads { background:#101010; color:#fff; border:1px solid rgba(255,255,255,0.15); }
-    .s-copy { background:rgba(255,255,255,0.08); color:rgba(255,255,255,0.75); border:1px solid rgba(255,255,255,0.15); }
-    .share-hashtags {
-      margin-top: 12px; font-size: 11px;
-      color: rgba(240,192,64,0.5); letter-spacing: 1px;
-    }
-    /* 플로팅 공유 */
-    .share-float {
-      position: fixed; right: 16px; bottom: 80px;
-      z-index: 200; display: none;
-      flex-direction: column; align-items: center; gap: 8px;
-    }
-    .sf-items {
-      display: flex; flex-direction: column; gap: 8px;
-      opacity: 0; transform: translateY(10px) scale(0.9);
-      pointer-events: none;
-      transition: all 0.25s cubic-bezier(0.16,1,0.3,1);
-    }
-    .sf-items.open { opacity:1; transform:translateY(0) scale(1); pointer-events:all; }
-    .sf-main {
-      width:50px; height:50px; border-radius:50%;
-      background: linear-gradient(135deg,#c0392b,#8b0000);
-      border:none; color:#fff; font-size:22px; cursor:pointer;
-      box-shadow:0 4px 20px rgba(192,57,43,0.55);
-      transition:all 0.3s; display:flex; align-items:center; justify-content:center;
-    }
-    .sf-main:hover { transform:scale(1.1); box-shadow:0 6px 28px rgba(192,57,43,0.75); }
-    .sf-btn {
-      width:40px; height:40px; border-radius:50%; border:none;
-      font-size:15px; cursor:pointer; font-weight:700;
-      display:flex; align-items:center; justify-content:center;
-      transition:all 0.2s; box-shadow:0 2px 12px rgba(0,0,0,0.35);
-    }
-    .sf-btn:hover { transform:scale(1.12); }
-    .sf-twitter { background:#000; color:#fff; }
-    .sf-facebook { background:#1877f2; color:#fff; }
-    .sf-threads { background:#101010; color:#fff; border:1px solid rgba(255,255,255,0.2); }
-    .sf-copy { background:rgba(20,10,35,0.95); color:rgba(255,255,255,0.8); border:1px solid rgba(255,255,255,0.2); }
-    .sf-label {
-      font-size:9px; color:rgba(255,255,255,0.5);
-      letter-spacing:0.5px; text-align:center; margin-top:2px;
-    }
-    /* 복사 토스트 */
-    #copy-toast {
-      position:fixed; bottom:140px; left:50%; transform:translateX(-50%);
-      background:rgba(192,57,43,0.95); color:#fff;
-      padding:10px 22px; border-radius:20px; font-size:13px;
-      z-index:300; letter-spacing:1px; opacity:0; pointer-events:none;
-      box-shadow:0 4px 20px rgba(192,57,43,0.4);
-      transition:opacity 0.3s; white-space:nowrap;
-    }
-    /* ── 모바일 최적화 ── */
-    @media (max-width: 480px) {
-      .wrapper { padding-top: calc(var(--nav-h) + 16px); padding-left: 12px; padding-right: 12px; }
-      .main-card { padding: 20px 16px; }
-      .scan-frame { width: 200px; height: 200px; }
-      #webcam-container { width: 180px; height: 180px; }
-      #webcam-container canvas,
-      #webcam-container video,
-      #preview-img { width: 180px; height: 180px; }
-      .guide-card { padding: 20px 16px; }
-      .char-grid { grid-template-columns: 1fr; }
-      .btn-main { font-size: 13px; }
-      .disqus-wrap { padding: 20px 16px; }
-    }
-    @media (max-width: 360px) {
-      .title-jp { font-size: 26px; }
-      .scan-frame { width: 180px; height: 180px; }
-      #webcam-container, #webcam-container canvas,
-      #webcam-container video, #preview-img { width: 160px; height: 160px; }
-    }
-  </style>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": "https://bs-pb2.pages.dev/#website",
-        "name": "귀멸의 칼날 상현 닮은꼴 AI 분석기",
-        "alternateName": "Demon Slayer Upper Moon Lookalike Analyzer",
-        "url": "https://bs-pb2.pages.dev/",
-        "inLanguage": ["ko", "en"],
-        "publisher": {
-          "@type": "Organization",
-          "name": "귀멸의 칼날 상현 닮은꼴",
-          "url": "https://bs-pb2.pages.dev/"
-        }
-      },
-      {
-        "@type": "WebApplication",
-        "@id": "https://bs-pb2.pages.dev/#webapp",
-        "name": "귀멸의 칼날 상현 닮은꼴 AI 분석기",
-        "alternateName": "Demon Slayer Upper Moon Lookalike Analyzer",
-        "url": "https://bs-pb2.pages.dev/",
-        "description": "귀멸의 칼날 상현 닮은꼴 무료 AI 분석기. 코쿠시보·도우마·아카자·한텐구·교코·다키 중 내 얼굴과 가장 닮은 상현 귀신을 AI로 즉시 분석합니다. 웹캠·사진 업로드 지원.",
-        "applicationCategory": "EntertainmentApplication",
-        "operatingSystem": "Chrome, Firefox, Safari, Edge",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "KRW"
-        },
-        "inLanguage": ["ko", "en"],
-        "image": "https://bs-pb2.pages.dev/images/douma.png",
-        "datePublished": "2026-02-20",
-        "dateModified": "2026-02-21",
-        "featureList": ["AI 얼굴 분석", "상현 닮은꼴 매칭", "웹캠 지원", "사진 업로드", "무료 이용"]
-      },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "홈", "item": "https://bs-pb2.pages.dev/"}
-        ]
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "촬영된 이미지가 저장되나요?",
-            "acceptedAnswer": {"@type": "Answer", "text": "아닙니다. 모든 이미지 분석은 브라우저 내에서 실시간으로 처리되며, 서버나 외부에 저장되지 않습니다. 분석이 끝나는 즉시 데이터는 삭제됩니다."}
-          },
-          {
-            "@type": "Question",
-            "name": "분석 결과가 항상 정확한가요?",
-            "acceptedAnswer": {"@type": "Answer", "text": "본 서비스는 AI 딥러닝 모델 기반의 순수 엔터테인먼트 콘텐츠입니다. 결과는 참고용으로만 활용해주세요. 여러 번 시도하거나 다양한 사진으로 해보면 더 재미있게 즐길 수 있습니다."}
-          },
-          {
-            "@type": "Question",
-            "name": "모바일에서도 사용 가능한가요?",
-            "acceptedAnswer": {"@type": "Answer", "text": "네, iOS Safari와 Android Chrome 모두에서 이용 가능합니다. '이미지 업로드' 탭을 선택하면 갤러리 사진을 업로드하거나 카메라로 바로 촬영해 분석할 수 있습니다."}
-          },
-          {
-            "@type": "Question",
-            "name": "어떤 캐릭터가 분석 대상인가요?",
-            "acceptedAnswer": {"@type": "Answer", "text": "귀멸의 칼날 상현 6등급 캐릭터가 분석 대상입니다. 코쿠시보(상현 壱), 도우마(상현 弐), 아카자(상현 参), 한텐구(상현 肆), 교코(상현 伍), 규타로·다키(상현 陸)가 포함됩니다."}
-          },
-          {
-            "@type": "Question",
-            "name": "카메라 권한을 거부했어요. 어떻게 하나요?",
-            "acceptedAnswer": {"@type": "Answer", "text": "카메라 탭 대신 '이미지 업로드' 탭을 이용해주세요. 사진 파일을 드래그&드롭하거나 클릭해 선택할 수 있습니다. 카메라 권한은 브라우저 주소창 자물쇠 아이콘에서 언제든 변경 가능합니다."}
-          },
-          {
-            "@type": "Question",
-            "name": "분석에 얼마나 걸리나요?",
-            "acceptedAnswer": {"@type": "Answer", "text": "이미지 분석 자체는 1~3초 내에 완료됩니다. 단, 첫 접속 시 AI 모델 파일(약 5~15MB)을 브라우저에 로드하는 데 5~15초가 소요될 수 있습니다. 로드 후에는 즉각 분석이 이루어집니다."}
-          },
-          {
-            "@type": "Question",
-            "name": "이 서비스는 무료인가요?",
-            "acceptedAnswer": {"@type": "Answer", "text": "네, 완전 무료 서비스입니다. 회원 가입, 로그인, 결제가 일절 필요 없습니다. Google AdSense 광고로 운영되며, 모든 분석 기능은 무료로 제공됩니다."}
-          },
-          {
-            "@type": "Question",
-            "name": "귀멸의 칼날 상현 중 가장 강한 캐릭터는 누구인가요?",
-            "acceptedAnswer": {"@type": "Answer", "text": "상현 중 가장 강한 캐릭터는 코쿠시보(상현 壱)입니다. 귀신들의 왕 무잔을 제외한 귀신 중 최강으로, 달의 호흡을 구사하며 여섯 개의 눈과 온몸의 칼날이 특징입니다. 귀살대 기둥 3명이 합력해도 쉽게 제압하기 어렵습니다."}
-          },
-          {
-            "@type": "Question",
-            "name": "어떤 사진이 더 정확한 결과를 주나요?",
-            "acceptedAnswer": {"@type": "Answer", "text": "정면을 바라본 얼굴 사진이 가장 정확합니다. 밝은 조명, 얼굴이 화면의 60~70%를 차지하는 구도를 권장합니다. 선글라스·마스크 착용이나 어두운 환경에서는 정확도가 낮아질 수 있습니다."}
-          },
-          {
-            "@type": "Question",
-            "name": "개인 얼굴 데이터가 외부로 유출될 위험이 있나요?",
-            "acceptedAnswer": {"@type": "Answer", "text": "유출 위험이 없습니다. 모든 AI 추론이 TensorFlow.js를 통해 사용자 브라우저 내에서만 처리되므로 이미지 데이터가 어떤 서버에도 전송되지 않습니다. 분석 완료 즉시 데이터는 자동 삭제됩니다."}
-          }
-        ]
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://bs-pb2.pages.dev/#webpage",
-        "url": "https://bs-pb2.pages.dev/",
-        "speakable": {
-          "@type": "SpeakableSpecification",
-          "cssSelector": [".guide-card p", ".faq-q", ".faq-a", ".guide-title", ".result-desc"]
-        }
-      }
-    ]
-  }
-  </script>
 </head>
 <body>
 
+  <!-- 배경 파티클 캔버스 -->
   <canvas id="bg-canvas"></canvas>
 
-  <!-- 네비게이션 -->
+  <!-- ============================================================
+       네비게이션
+       ============================================================ -->
   <nav class="site-nav">
     <div class="nav-inner">
-      <a class="nav-logo" href="/">鬼滅 上弦</a>
+      <a class="nav-logo" id="nav-logo" href="/">···</a>
       <div class="nav-links">
-        <a href="/" class="active" data-i18n="nav.home">홈</a>
-        <a href="/about.html" data-i18n="nav.about">소개</a>
-        <a href="/contact.html" data-i18n="nav.contact">문의</a>
-        <a href="/privacy.html" data-i18n="nav.privacy">개인정보</a>
+        <a href="/"            class="active">홈</a>
+        <a href="/about.html"  >소개</a>
+        <a href="/contact.html">문의</a>
+        <a href="/privacy.html">개인정보</a>
       </div>
       <div class="lang-toggle">
         <button class="lang-btn" data-lang="ko" onclick="setLang('ko')">KO</button>
-        <span class="lang-sep">|</span>
+        <span   class="lang-sep">|</span>
         <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
       </div>
-      <button class="nav-hamburger" data-i18n-aria="nav.menu-aria" aria-label="메뉴 열기" onclick="toggleNav()">☰</button>
+      <button class="nav-hamburger" aria-label="메뉴 열기" onclick="toggleNav()">☰</button>
     </div>
     <div class="nav-mobile" id="nav-mobile">
-      <a href="/" class="active" data-i18n="nav.home">홈</a>
-      <a href="/about.html" data-i18n="nav.about">소개</a>
-      <a href="/contact.html" data-i18n="nav.contact">문의</a>
-      <a href="/privacy.html" data-i18n="nav.privacy">개인정보</a>
+      <a href="/"            class="active">홈</a>
+      <a href="/about.html"  >소개</a>
+      <a href="/contact.html">문의</a>
+      <a href="/privacy.html">개인정보</a>
       <div class="lang-toggle lang-toggle-mobile">
         <button class="lang-btn" data-lang="ko" onclick="setLang('ko')">KO</button>
-        <span class="lang-sep">|</span>
+        <span   class="lang-sep">|</span>
         <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
       </div>
     </div>
   </nav>
 
+  <!-- ============================================================
+       메인 래퍼
+       ============================================================ -->
   <div class="wrapper">
 
-    <!-- 헤더 -->
-    <header class="site-header">
-      <div class="header-deco">Demon Slayer · Upper Moon</div>
-      <h1 class="title-jp">鬼滅の刃<br>상현 닮은꼴</h1>
-      <p class="title-sub" data-i18n="index.tagline">당신은 어떤 상현을 닮았을까?</p>
-      <div class="badge-row">
-        <span class="badge" data-i18n="index.badge1">상현 壱</span>
-        <span class="badge" data-i18n="index.badge2">상현 弐</span>
-        <span class="badge" data-i18n="index.badge3">상현 参</span>
-        <span class="badge" data-i18n="index.badge4">상현 肆</span>
-        <span class="badge" data-i18n="index.badge5">상현 伍</span>
-        <span class="badge" data-i18n="index.badge6">상현 陸</span>
-      </div>
-    </header>
+    <!-- 헤더 — main.js 가 site.config.js 로부터 자동 렌더링 -->
+    <header class="site-header" id="site-header"></header>
 
     <div class="divider"></div>
 
-    <!-- AI 분석 카드 -->
+    <!-- ── AI 분석 카드 (기능 고정, 내용은 config 기반) ── -->
     <div class="main-card">
+
+      <!-- 로딩 오버레이 -->
       <div class="loading-overlay" id="loading-overlay">
         <div class="spinner"></div>
-        <div class="loading-text" data-i18n="index.loading">모델 불러오는 중...</div>
+        <div class="loading-text">모델 불러오는 중...</div>
       </div>
 
+      <!-- 탭 -->
       <div class="mode-tabs">
-        <button class="tab-btn active" id="tab-cam" onclick="switchTab('cam')" data-i18n="index.tab.cam">📷 카메라</button>
-        <button class="tab-btn" id="tab-upload" onclick="switchTab('upload')" data-i18n="index.tab.upload">🖼️ 이미지 업로드</button>
+        <button class="tab-btn active" id="tab-cam"    onclick="switchTab('cam')">📷 카메라</button>
+        <button class="tab-btn"        id="tab-upload" onclick="switchTab('upload')">🖼️ 이미지 업로드</button>
       </div>
 
+      <!-- 스캔 프레임 (카메라 탭) -->
       <div class="scan-frame" id="scan-frame">
         <div class="scan-inner">
           <div class="ring"></div>
@@ -821,54 +164,61 @@
                 <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
                 <circle cx="12" cy="13" r="4"/>
               </svg>
-              <span data-i18n="index.cam.placeholder">카메라를 시작하세요</span>
+              <span id="cam-placeholder-text">카메라를 시작하세요</span>
             </div>
           </div>
         </div>
       </div>
 
+      <!-- 업로드 영역 (업로드 탭) -->
       <div class="upload-area" id="upload-area" onclick="document.getElementById('file-input').click()">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
           <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
           <polyline points="17 8 12 3 7 8"/>
           <line x1="12" y1="3" x2="12" y2="15"/>
         </svg>
-        <p data-i18n-html="index.upload.click-html"><strong>클릭</strong>하거나 이미지를 드래그 &amp; 드롭</p>
-        <p style="margin-top:5px;font-size:11px;" data-i18n="index.upload.types">JPG · PNG · WEBP 지원</p>
+        <p id="upload-hint"><strong>클릭</strong>하거나 이미지를 드래그 &amp; 드롭</p>
+        <p id="upload-types" style="margin-top:5px;font-size:11px;">JPG · PNG · WEBP 지원</p>
         <input type="file" id="file-input" accept="image/*" onchange="onFileSelect(event)">
         <img id="preview-img" style="display:none;margin-top:14px;border-radius:12px;max-height:200px;object-fit:cover;width:100%;">
       </div>
 
+      <!-- 버튼 -->
       <div class="btn-group">
-        <button class="btn-main btn-scan" id="start-btn" onclick="handleStart()" disabled data-i18n="index.btn.start">⚡ 분석 시작</button>
+        <button class="btn-main btn-scan" id="start-btn" onclick="handleStart()" disabled>⚡ 분석 시작</button>
         <button class="btn-main btn-reset" title="초기화" onclick="resetAll()">↺</button>
       </div>
 
-      <p id="status-msg" data-i18n="index.status.preparing">모델을 준비 중입니다...</p>
+      <p id="status-msg">모델을 준비 중입니다...</p>
     </div>
+    <!-- /.main-card -->
 
-    <!-- 결과 섹션 -->
+    <!-- ── 결과 섹션 (구조 고정) ── -->
     <div id="result-section">
+
+      <!-- 최고 매치 카드 -->
       <div class="result-hero">
         <div class="demon-eye">
           <svg viewBox="0 0 60 60" fill="none">
-            <ellipse cx="30" cy="30" rx="28" ry="16" fill="rgba(192,57,43,0.15)" stroke="rgba(192,57,43,0.5)" stroke-width="1.5"/>
-            <ellipse cx="30" cy="30" rx="12" ry="12" fill="#1a0010" stroke="rgba(192,57,43,0.8)" stroke-width="1"/>
-            <ellipse cx="30" cy="30" rx="7" ry="7" fill="#c0392b" opacity="0.9"/>
+            <ellipse cx="30" cy="30" rx="28" ry="16" fill="rgba(var(--crimson-rgb),0.15)" stroke="rgba(var(--crimson-rgb),0.5)" stroke-width="1.5"/>
+            <ellipse cx="30" cy="30" rx="12" ry="12" fill="#1a0010" stroke="rgba(var(--crimson-rgb),0.8)" stroke-width="1"/>
+            <ellipse cx="30" cy="30" rx="7"  ry="7"  fill="var(--crimson)" opacity="0.9"/>
             <ellipse cx="30" cy="30" rx="3.5" ry="3.5" fill="#0a0005"/>
             <ellipse cx="32" cy="28" rx="1.5" ry="1.5" fill="rgba(255,255,255,0.6)"/>
-            <text x="30" y="33" text-anchor="middle" font-size="5" fill="rgba(240,192,64,0.7)" font-family="serif">上弦</text>
+            <text x="30" y="33" text-anchor="middle" font-size="5" fill="rgba(var(--gold-rgb),0.7)" font-family="serif" id="result-eye-symbol">上弦</text>
           </svg>
         </div>
-        <div class="result-label" data-i18n="index.result.label">당신과 닮은 상현</div>
-        <div class="result-name" id="result-name">—</div>
-        <div class="result-rank" id="result-rank"></div>
-        <div class="result-desc" id="result-desc"></div>
-        <div class="result-score-big" id="result-score">0%</div>
-        <div class="result-score-label" data-i18n="index.result.score-label">유사도</div>
+        <div class="result-label" data-result-label>당신과 닮은 캐릭터</div>
+        <div class="result-name"  id="result-name">—</div>
+        <div class="result-rank"  id="result-rank"></div>
+        <div class="result-desc"  id="result-desc"></div>
+        <div class="result-score-big"   id="result-score">0%</div>
+        <div class="result-score-label" data-score-label>유사도</div>
       </div>
+
+      <!-- 전체 결과 바 -->
       <div class="all-results">
-        <h3 data-i18n="index.result.all">전체 분석 결과</h3>
+        <h3 data-all-label>전체 분석 결과</h3>
         <div id="label-container"></div>
       </div>
 
@@ -876,306 +226,43 @@
       <div class="share-result-card">
         <p class="share-result-label">🔥 결과 공유하기</p>
         <div class="share-btns">
-          <button class="share-btn s-save" onclick="downloadResultCard()" title="결과 이미지 저장">💾 이미지 저장</button>
-          <button class="share-btn s-native" id="share-native-btn" onclick="shareSNS('native')" title="모바일 공유">📱 공유하기</button>
-          <button class="share-btn s-twitter" onclick="shareSNS('twitter')" title="Twitter/X로 공유">𝕏 트위터</button>
-          <button class="share-btn s-facebook" onclick="shareSNS('facebook')" title="Facebook으로 공유">Facebook</button>
-          <button class="share-btn s-threads" onclick="shareSNS('threads')" title="Threads로 공유">⊕ Threads</button>
-          <button class="share-btn s-copy" id="share-copy-btn" onclick="shareSNS('copy')">🔗 링크 복사</button>
+          <button class="share-btn s-save"    onclick="downloadResultCard()"   title="결과 이미지 저장">💾 이미지 저장</button>
+          <button class="share-btn s-native"  onclick="shareSNS('native')"    title="공유하기" id="share-native-btn">📱 공유하기</button>
+          <button class="share-btn s-twitter" onclick="shareSNS('twitter')"   title="X(Twitter)로 공유">𝕏 트위터</button>
+          <button class="share-btn s-facebook"onclick="shareSNS('facebook')"  title="Facebook으로 공유">Facebook</button>
+          <button class="share-btn s-threads" onclick="shareSNS('threads')"   title="Threads로 공유">⊕ Threads</button>
+          <button class="share-btn s-copy"    onclick="shareSNS('copy')"      id="share-copy-btn">🔗 링크 복사</button>
         </div>
-        <p class="share-hashtags">#귀멸의칼날 #상현닮은꼴 #귀멸AI #DemonSlayer</p>
+        <p class="share-hashtags"></p>
       </div>
+
     </div>
+    <!-- /#result-section -->
+
+    <!-- 복사 토스트 -->
     <div id="copy-toast">✅ 클립보드에 복사됐어요!</div>
 
-    <!-- ═══════════════════════════════════════════
-         콘텐츠 가이드 섹션 (800단어 이상)
-         ═══════════════════════════════════════════ -->
-    <section class="guide-section">
+    <!-- ── 가이드 섹션 — main.js 가 site.config.js 로부터 자동 렌더링 ── -->
+    <section class="guide-section" id="guide-section"></section>
 
-      <!-- 이용 방법 -->
-      <div class="guide-card">
-        <h2 data-i18n="guide.howto.h2">⚡ 이용 방법</h2>
-        <div class="how-to">
-          <div class="how-step">
-            <div class="step-num">1</div>
-            <div class="step-text" data-i18n-html="guide.howto.s1-html"><strong>카메라 탭</strong> 선택 후 '분석 시작'을 클릭하면 웹캠이 활성화됩니다. 브라우저의 카메라 접근 허용을 눌러주세요.</div>
-          </div>
-          <div class="how-step">
-            <div class="step-num">2</div>
-            <div class="step-text" data-i18n-html="guide.howto.s2-html">얼굴이 <strong>프레임 중앙</strong>에 오도록 위치를 조절하세요. 밝은 조명이 있는 환경에서 더 정확한 결과를 얻을 수 있습니다.</div>
-          </div>
-          <div class="how-step">
-            <div class="step-num">3</div>
-            <div class="step-text" data-i18n-html="guide.howto.s3-html"><strong>'스냅샷 찍기'</strong>를 누르면 해당 순간의 이미지를 AI가 분석합니다. 결과가 아래에 표시됩니다.</div>
-          </div>
-          <div class="how-step">
-            <div class="step-num">4</div>
-            <div class="step-text" data-i18n-html="guide.howto.s4-html"><strong>이미지 업로드 탭</strong>에서는 사진 파일을 드래그&amp;드롭하거나 클릭하여 업로드할 수 있습니다. 모바일에서는 갤러리 사진을 바로 선택할 수 있습니다.</div>
-          </div>
-          <div class="how-step">
-            <div class="step-num">5</div>
-            <div class="step-text" data-i18n-html="guide.howto.s5-html">분석 결과로 <strong>가장 닮은 상현 캐릭터</strong>와 각 캐릭터별 유사도 퍼센트가 표시됩니다. 결과를 스크린샷 찍어 친구와 공유해보세요!</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 상현이란? -->
-      <div class="guide-card">
-        <h2 data-i18n="guide.uppermoon.h2">👁️ 상현(上弦)이란?</h2>
-        <p>
-          <span data-i18n-html="guide.uppermoon.p1-html">귀멸의 칼날에서 <strong>상현(上弦)</strong>은 귀신들의 왕 키부츠지 무잔의 친위대라 할 수 있는
-          최강의 귀신 집단이다. 상현 일(壱)부터 상현 육(陸)까지 총 6등급으로 이루어져 있으며,
-          숫자가 낮을수록 더 강력한 귀신임을 의미한다.</span>
-        </p>
-        <p>
-          <span data-i18n-html="guide.uppermoon.p2-html">상현들은 일반 귀신과는 차원이 다른 전투력을 보유하고 있으며, 각자 고유한
-          <strong>혈귀술(血鬼術)</strong>이라 불리는 특수 능력을 구사한다. 이들은 수백 년에 걸쳐
-          인간의 피를 흡수하며 살아남은 존재들로, 인간의 감정과 기억, 과거의 상처를 여전히 안고 살아간다.</span>
-        </p>
-        <p>
-          <span data-i18n-html="guide.uppermoon.p3-html">귀살대(鬼殺隊)의 핵심 전력인 기둥(柱)들도 상현과 맞붙으면 목숨을 잃을 수 있을 만큼
-          압도적인 강함을 자랑한다. 시리즈 전반에 걸쳐 최강의 빌런으로 군림하며
-          팬들에게 강렬한 인상을 남긴 귀멸의 칼날 최고 인기 캐릭터 그룹이기도 하다.</span>
-        </p>
-      </div>
-
-      <!-- 캐릭터 카드 그리드 -->
-      <p class="guide-title" style="margin-top:8px;" data-i18n="guide.char-title">상현 캐릭터 가이드</p>
-      <p class="guide-title-sub">Upper Moon Character Encyclopedia</p>
-
-      <div class="char-grid">
-
-        <div class="guide-card">
-          <h2>코쿠시보 <span class="rank-badge" data-i18n="char.kokushibo.rank">상현 壱</span></h2>
-          <div class="char-card-inner">
-            <div class="char-img-wrap">
-              <picture>
-                <source srcset="/images/kokushibo.webp" type="image/webp">
-                <img src="/images/kokushibo.png" alt="코쿠시보 상현 壱" loading="lazy" width="200" height="240">
-              </picture>
-            </div>
-            <div class="char-card-text">
-              <p data-i18n-html="char.kokushibo.desc-html">
-                무잔을 제외한 <strong>귀신 중 최강</strong>의 존재. 본명은 미치카츠 츠기쿠니로,
-                귀살대 역사상 가장 위대한 검사 요리이치 츠기쿠니의 쌍둥이 형이다.
-                뛰어난 형에 대한 열등감으로 스스로 귀신이 되기를 선택한 비극적 인물.
-                스스로 창시한 <strong>달의 호흡(月の呼吸)</strong>과 여섯 개의 눈,
-                온몸에 돋아난 칼날이 특징으로, 세 명의 기둥이 합력해도 쉽게 쓰러뜨리기 어렵다.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="guide-card">
-          <h2>도우마 <span class="rank-badge" data-i18n="char.douma.rank">상현 弐</span></h2>
-          <div class="char-card-inner">
-            <div class="char-img-wrap">
-              <picture>
-                <source srcset="/images/douma.webp" type="image/webp">
-                <img src="/images/douma.png" alt="도우마 상현 弐" loading="lazy" width="200" height="240">
-              </picture>
-            </div>
-            <div class="char-card-text">
-              <p data-i18n-html="char.douma.desc-html">
-                무지개색 눈을 가진 미형의 귀신. 인간 시절부터 <strong>어떤 감정도 느끼지 못하는</strong>
-                공허한 영혼의 소유자로, 허무주의적 세계관을 가진다.
-                화려한 부채로 얼음과 냉기를 자유자재로 다루는 혈귀술을 구사한다.
-                겉으로는 온화하고 매력적이지만 인간을 단순한 식사로 여기는 잔혹한 본성을 지닌다.
-                카나오·이노스케가 합력하고 시노부의 희생으로 겨우 격파하는 역대급 강적.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="guide-card">
-          <h2>아카자 <span class="rank-badge" data-i18n="char.akaza.rank">상현 参</span></h2>
-          <div class="char-card-inner">
-            <div class="char-img-wrap">
-              <picture>
-                <source srcset="/images/akaza.webp" type="image/webp">
-                <img src="/images/akaza.png" alt="아카자 상현 参" loading="lazy" width="200" height="240">
-              </picture>
-            </div>
-            <div class="char-card-text">
-              <p data-i18n-html="char.akaza.desc-html">
-                <strong>오로지 강자와의 싸움만을 추구</strong>하는 전투 귀신. 인간 시절 이름은 핫케이쥬로로,
-                아버지를 위해 도둑질을 하다 검사 도장에 입문한 불우한 과거를 가진다.
-                수련으로 쌓은 무술이 귀신의 힘과 결합한 파괴적 전투력의 소유자.
-                온몸에 새겨진 붉은 문신과 격렬한 전투 스타일로 팬들에게 강렬한 인상을 남겼다.
-                탄지로와의 격전에서 인간 시절 기억과 마주하며 스스로 붕괴한다.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="guide-card">
-          <h2>한텐구 <span class="rank-badge" data-i18n="char.hantengu.rank">상현 肆</span></h2>
-          <div class="char-card-inner">
-            <div class="char-img-wrap">
-              <picture>
-                <source srcset="/images/hantengu.webp" type="image/webp">
-                <img src="/images/hantengu.png" alt="한텐구 상현 肆" loading="lazy" width="200" height="240">
-              </picture>
-            </div>
-            <div class="char-card-text">
-              <p data-i18n-html="char.hantengu.desc-html">
-                극도의 겁쟁이 귀신이지만, <strong>두려움이라는 감정 자체가 강력한 분신을 탄생</strong>시킨다.
-                공포·기쁨·분노·슬픔 등 각각의 감정이 독립적인 귀신으로 분열되어 싸운다.
-                본체는 오히려 가장 약하지만 몸을 숨기며 분신들로 싸우는 전략을 구사한다.
-                극도의 겁쟁이라는 설정이 역설적으로 공략하기 가장 까다로운 상현 중 하나로 만들었다.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="guide-card">
-          <h2>교코 <span class="rank-badge" data-i18n="char.gyokko.rank">상현 伍</span></h2>
-          <div class="char-card-inner">
-            <div class="char-img-wrap">
-              <picture>
-                <source srcset="/images/gyokko.webp" type="image/webp">
-                <img src="/images/gyokko.png" alt="교코 상현 伍" loading="lazy" width="200" height="240">
-              </picture>
-            </div>
-            <div class="char-card-text">
-              <p data-i18n-html="char.gyokko.desc-html">
-                물고기 인간처럼 기이한 외모를 지닌 귀신으로, <strong>극도로 일그러진 미적 감각</strong>을 자랑한다.
-                거대한 항아리들을 근거지로 삼아 이동하며, 물고기 형태의 혈귀술 조각들로 공격한다.
-                자신의 작품에 극도로 집착하며 자기 도취적인 성격을 가진다.
-                무이치로 토키토와의 격전에서 쓰러지지만, 독특한 비주얼로 팬들에게 오래 기억되는 캐릭터다.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="guide-card">
-          <h2>규타로 &amp; 다키 <span class="rank-badge" data-i18n="char.dakigyutaro.rank">상현 陸</span></h2>
-          <div class="char-card-inner">
-            <div class="char-img-wrap">
-              <picture>
-                <source srcset="/images/daki-gyutaro.webp" type="image/webp">
-                <img src="/images/daki-gyutaro.png" alt="규타로와 다키 상현 陸" loading="lazy" width="200" height="240">
-              </picture>
-            </div>
-            <div class="char-card-text">
-              <p data-i18n-html="char.dakigyutaro.desc-html">
-                <strong>오빠 규타로와 여동생 다키</strong>, 두 귀신이 하나의 육체를 공유하는 독특한 구조.
-                규타로는 독이 담긴 낫으로 잔혹하게 싸우며, 다키는 오비(帯)라 불리는 대형 띠를 이용한 현란한 공격을 펼친다.
-                남매는 인간 시절 유흥가에서 극도로 비참한 삶을 살았으며, 그 고통이 귀신이 된 후에도
-                강력한 유대감으로 이어진다. 탄지로·젠이츠·이노스케 셋이 힘을 합쳐 겨우 쓰러뜨리는 강적.
-              </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- AI 작동 원리 -->
-      <div class="guide-card">
-        <h2 data-i18n="guide.ai.h2">🧠 AI 작동 원리</h2>
-        <p>
-          <span data-i18n-html="guide.ai.p1-html">본 서비스는 <strong>Google Teachable Machine</strong>을 기반으로 학습된 딥러닝 이미지 분류 모델을 사용합니다.
-          TensorFlow.js 라이브러리를 통해 브라우저 내에서 직접 AI 추론이 이루어지며,
-          사용자의 이미지는 외부 서버로 전송되지 않습니다.</span>
-        </p>
-        <p>
-          <span data-i18n-html="guide.ai.p2-html">모든 처리는 사용자의 기기(브라우저) 안에서만 진행되므로 개인 정보가 외부로 유출될 위험이 없습니다.
-          AI 모델은 얼굴 형태, 이목구비 비율 등의 특징을 분석하여 어떤 캐릭터와 가장 유사한 특징을 가지는지
-          수치화합니다. 결과는 <strong>재미로 즐기는 엔터테인먼트 콘텐츠</strong>이며, 진지한 생체인식 도구가 아닙니다.</span>
-        </p>
-      </div>
-
-      <!-- FAQ -->
-      <div class="guide-card">
-        <h2 data-i18n="guide.faq.h2">❓ 자주 묻는 질문 (FAQ)</h2>
-        <div class="faq-item">
-          <p class="faq-q" data-i18n="guide.faq.q1">Q. 촬영된 이미지가 저장되나요?</p>
-          <p class="faq-a"><span data-i18n="guide.faq.a1">아닙니다. 모든 이미지 분석은 브라우저 내에서 실시간으로 처리되며, 서버나 외부에 저장되지 않습니다. 분석이 끝나는 즉시 데이터는 삭제됩니다.</span></p>
-        </div>
-        <div class="faq-item">
-          <p class="faq-q" data-i18n="guide.faq.q2">Q. 분석 결과가 항상 정확한가요?</p>
-          <p class="faq-a"><span data-i18n="guide.faq.a2">본 서비스는 AI 딥러닝 모델을 기반으로 하지만, 순수한 엔터테인먼트 목적의 콘텐츠입니다. 결과는 참고용으로만 활용해주세요. 여러 번 시도하거나 다양한 사진으로 해보면 더 재미있게 즐길 수 있습니다.</span></p>
-        </div>
-        <div class="faq-item">
-          <p class="faq-q" data-i18n="guide.faq.q3">Q. 모바일에서도 사용 가능한가요?</p>
-          <p class="faq-a">네, <span data-i18n="guide.faq.a3">iOS Safari와 Android Chrome에서 이용 가능합니다. '이미지 업로드' 탭을 이용하면 갤러리 사진을 업로드하거나 카메라로 바로 촬영할 수 있습니다.</span></p>
-        </div>
-        <div class="faq-item">
-          <p class="faq-q" data-i18n="guide.faq.q4">Q. 어떤 캐릭터가 분석 대상인가요?</p>
-          <p class="faq-a"><span data-i18n="guide.faq.a4">코쿠시보(상현 壱), 도우마(상현 弐), 아카자(상현 参), 한텐구(상현 肆), 교코(상현 伍), 규타로/다키(상현 陸) 총 상현 6등급의 캐릭터가 포함되어 있습니다.</span></p>
-        </div>
-        <div class="faq-item">
-          <p class="faq-q" data-i18n="guide.faq.q5">Q. 카메라 권한을 거부했어요.</p>
-          <p class="faq-a"><span data-i18n-html="guide.faq.a5-html">카메라 탭 대신 '이미지 업로드' 탭을 이용해주세요. 사진 파일을 직접 선택하거나 드래그&amp;드롭하여 분석할 수 있습니다. 카메라 권한은 브라우저 주소창 자물쇠 아이콘에서 언제든 변경 가능합니다.</span></p>
-        </div>
-        <div class="faq-item">
-          <p class="faq-q">Q. 분석에 얼마나 걸리나요?</p>
-          <p class="faq-a">이미지 분석 자체는 <strong>1~3초</strong> 내에 완료됩니다. 첫 접속 시 AI 모델 파일(약 5~15MB)을 브라우저에 로드하는 데 5~15초가 소요될 수 있습니다. 모델 로드 후에는 즉각 분석이 이루어집니다.</p>
-        </div>
-        <div class="faq-item">
-          <p class="faq-q">Q. 이 서비스는 무료인가요?</p>
-          <p class="faq-a">네, <strong>완전 무료 서비스</strong>입니다. 회원 가입·로그인·결제가 일절 필요 없습니다. Google AdSense 광고 수익으로 운영되며, 모든 AI 분석 기능은 제한 없이 무료로 제공됩니다.</p>
-        </div>
-        <div class="faq-item">
-          <p class="faq-q">Q. 귀멸의 칼날 상현 중 가장 강한 캐릭터는 누구인가요?</p>
-          <p class="faq-a">상현 중 가장 강한 캐릭터는 <strong>코쿠시보(상현 壱)</strong>입니다. 귀신들의 왕 무잔을 제외한 귀신 중 최강으로, 달의 호흡과 여섯 개의 눈, 온몸의 칼날이 특징입니다. 귀살대 기둥 3명이 합력해도 쉽게 제압하기 어렵습니다.</p>
-        </div>
-        <div class="faq-item">
-          <p class="faq-q">Q. 어떤 사진이 더 정확한 결과를 주나요?</p>
-          <p class="faq-a"><strong>정면을 바라본 얼굴 사진</strong>이 가장 정확합니다. 밝은 조명에서 촬영하고 얼굴이 화면의 60~70%를 차지하는 구도를 권장합니다. 선글라스·마스크 착용 사진은 정확도가 낮아질 수 있습니다.</p>
-        </div>
-        <div class="faq-item">
-          <p class="faq-q">Q. 개인 얼굴 데이터가 외부로 유출될 위험이 있나요?</p>
-          <p class="faq-a">유출 위험이 <strong>전혀 없습니다</strong>. TensorFlow.js를 통해 모든 AI 추론이 사용자의 브라우저 내에서만 처리되므로 이미지 데이터가 어떤 서버에도 전송되지 않습니다. 분석 완료 즉시 데이터가 자동으로 삭제됩니다.</p>
-        </div>
-      </div>
-
-      <!-- 별점 평가 섹션 -->
-      <div class="guide-card" id="rating-card" style="text-align:center;">
-        <h2>⭐ 서비스를 평가해주세요</h2>
-        <p style="font-size:13px;color:rgba(255,255,255,0.5);margin-bottom:18px;">귀멸의 칼날 상현 닮은꼴 AI 분석기, 어떠셨나요?</p>
-        <div id="star-row" style="font-size:40px;letter-spacing:6px;cursor:pointer;line-height:1;margin-bottom:12px;">
-          <span class="star-el" data-v="1" style="color:rgba(255,255,255,0.2);transition:color .2s;">★</span>
-          <span class="star-el" data-v="2" style="color:rgba(255,255,255,0.2);transition:color .2s;">★</span>
-          <span class="star-el" data-v="3" style="color:rgba(255,255,255,0.2);transition:color .2s;">★</span>
-          <span class="star-el" data-v="4" style="color:rgba(255,255,255,0.2);transition:color .2s;">★</span>
-          <span class="star-el" data-v="5" style="color:rgba(255,255,255,0.2);transition:color .2s;">★</span>
-        </div>
-        <p id="star-msg" style="font-size:13px;color:rgba(255,255,255,0.4);min-height:20px;"></p>
-      </div>
-
-    </section>
-
-    <!-- Disqus 댓글 -->
+    <!-- ── Disqus 댓글 ── -->
     <div class="disqus-wrap">
-      <p class="disqus-title" data-i18n="index.comments">💬 댓글 · Comments</p>
+      <p class="disqus-title">💬 댓글 · Comments</p>
       <div id="disqus_thread"></div>
-      <noscript>댓글을 보려면 JavaScript를 활성화하세요. <a href="https://disqus.com/?ref_noscript">Disqus로 제공되는 댓글</a></noscript>
+      <noscript>댓글을 보려면 JavaScript를 활성화하세요.</noscript>
     </div>
 
-    <!-- 푸터 -->
-    <footer class="site-footer" style="width:100%;">
-      <div class="footer-links">
-        <a href="/" data-i18n="footer.home">홈</a>
-        <a href="/about.html" data-i18n="footer.about">소개</a>
-        <a href="/privacy.html" data-i18n="footer.privacy-link">개인정보처리방침</a>
-        <a href="/contact.html" data-i18n="footer.contact-link">문의하기</a>
-      </div>
-      <div class="footer-copy">
-        DEMON SLAYER · UPPER MOON ANALYZER<br>
-        <span data-i18n="footer.copy2">본 서비스는 Teachable Machine AI를 사용합니다</span><br>
-        귀멸의 칼날 © 吾峠呼世晴 / 集英社
-      </div>
-    </footer>
+    <!-- ── 푸터 — main.js 가 site.config.js 로부터 자동 렌더링 ── -->
+    <footer class="site-footer" id="site-footer"></footer>
 
-  </div><!-- /.wrapper -->
+  </div>
+  <!-- /.wrapper -->
 
-  <!-- 플로팅 SNS 공유 -->
+  <!-- ── 플로팅 SNS 공유 버튼 ── -->
   <div class="share-float" id="share-float">
     <div class="sf-items" id="sf-items">
       <div style="display:flex;flex-direction:column;align-items:center;">
-        <button class="sf-btn sf-twitter" onclick="shareSNS('twitter')" title="Twitter/X">𝕏</button>
+        <button class="sf-btn sf-twitter"  onclick="shareSNS('twitter')"  title="X(Twitter)">𝕏</button>
         <span class="sf-label">트위터</span>
       </div>
       <div style="display:flex;flex-direction:column;align-items:center;">
@@ -1183,504 +270,29 @@
         <span class="sf-label">Facebook</span>
       </div>
       <div style="display:flex;flex-direction:column;align-items:center;">
-        <button class="sf-btn sf-threads" onclick="shareSNS('threads')" title="Threads">⊕</button>
+        <button class="sf-btn sf-threads"  onclick="shareSNS('threads')"  title="Threads">⊕</button>
         <span class="sf-label">Threads</span>
       </div>
       <div style="display:flex;flex-direction:column;align-items:center;">
-        <button class="sf-btn sf-copy" onclick="shareSNS('copy')" title="링크 복사">🔗</button>
+        <button class="sf-btn sf-copy"     onclick="shareSNS('copy')"     title="링크 복사">🔗</button>
         <span class="sf-label">복사</span>
       </div>
     </div>
-    <button class="sf-main" id="sf-main-btn" onclick="toggleShareFloat()" title="공유하기" aria-label="공유">↗</button>
+    <button class="sf-main" id="sf-main-btn" onclick="toggleShareFloat()" aria-label="공유">↗</button>
   </div>
 
-  <!-- ═══════════ JavaScript ═══════════ -->
-  <!-- TF.js / TeachableMachine: body 하단 배치로 렌더 블로킹 제거 (LCP 최적화) -->
-  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.22.0/dist/tf.min.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8.5/dist/teachablemachine-image.min.js" crossorigin="anonymous"></script>
+  <!-- ============================================================
+       스크립트 로딩 순서 (body 하단 — 렌더 블로킹 제거)
+       1. TensorFlow.js + TeachableMachine (AI 추론)
+       2. site.config.js  ← 새 프로젝트 시 이 파일만 교체
+       3. i18n.js         ← 언어 전환 유틸
+       4. main.js         ← 모든 로직 + 렌더링
+       ============================================================ -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.22.0/dist/tf.min.js"                                   crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8.5/dist/teachablemachine-image.min.js"         crossorigin="anonymous"></script>
+  <script src="/site.config.js"></script>
   <script src="/i18n.js"></script>
-  <script>
-    // ── 전역 에러 핸들러 (crossorigin 스크립트 에러 상세 포착) ──
-    window.addEventListener('error', function(e) {
-      // "Script error." = crossorigin 속성 없는 외부 스크립트 에러 (보안 마스킹)
-      // crossorigin="anonymous" 추가 후에는 실제 메시지가 여기에 찍힘
-      if (e.message === 'Script error.' || e.filename === '') return; // 서드파티 노이즈 무시
-      console.warn('[상현닮은꼴] 에러 감지:', e.message, '|', e.filename, ':', e.lineno);
-    });
-    window.addEventListener('unhandledrejection', function(e) {
-      console.warn('[상현닮은꼴] 미처리 Promise 거부:', e.reason);
-    });
+  <script src="/main.js"></script>
 
-    // ── 네비게이션 ──
-    function toggleNav() {
-      document.getElementById('nav-mobile').classList.toggle('open');
-    }
-    document.addEventListener('click', (e) => {
-      if (!e.target.closest('.site-nav')) {
-        document.getElementById('nav-mobile').classList.remove('open');
-      }
-    });
-
-    // ── 캐릭터 DB ──
-    const CHARACTER_DB = {
-      '코쿠시보': { rank: { ko: '상현 壱', en: 'Upper Moon 壱' }, desc: { ko: '최강의 귀신. 달의 호흡을 구사하는 절대자. 여섯 개의 눈과 온몸의 칼날이 특징.', en: 'The strongest demon. Master of Moon Breathing with six eyes and blades all over.' } },
-      '도우마':   { rank: { ko: '상현 弐', en: 'Upper Moon 弐' }, desc: { ko: '냉혹한 미소의 허무주의자. 팬을 이용한 냉기 혈귀술의 사용자. 천부적인 아름다움을 지닌 상현.', en: 'Nihilistic with a cold smile. Wields ice-based Blood Demon Art with fans. A demon of beauty.' } },
-      '아카자':   { rank: { ko: '상현 参', en: 'Upper Moon 参' }, desc: { ko: '파괴살의 달인. 강자와의 전투를 갈망하는 전투 귀신. 불굴의 의지와 파괴적 전투력의 소유자.', en: 'Master of destructive combat. Craves battle against the strong. Indomitable will and power.' } },
-      '한텐구':   { rank: { ko: '상현 肆', en: 'Upper Moon 肆' }, desc: { ko: '두려움으로 분신을 만드는 귀신. 겁쟁이의 공포가 강력한 복수의 분신들을 탄생시킨다.', en: 'A coward whose fear spawns powerful demon clones. Each emotion becomes an independent fighter.' } },
-      '교코':     { rank: { ko: '상현 伍', en: 'Upper Moon 伍' }, desc: { ko: '항아리 속에 거주하는 기이한 귀신. 독특한 미적 감각과 물고기 혈귀술의 소유자.', en: 'Bizarre demon living in pots. Wields fish-shaped Blood Demon Art sculptures.' } },
-      '규타로':   { rank: { ko: '상현 陸 · 오빠', en: 'Upper Moon 陸 · Brother' }, desc: { ko: '다키와 육체를 공유하는 상현. 독이 담긴 낫을 휘두르며 독기를 뿜어내는 잔혹한 전투자.', en: 'Shares a body with Daki. Wields venomous sickles with brutal combat style.' } },
-      '다키':     { rank: { ko: '상현 陸 · 여동생', en: 'Upper Moon 陸 · Sister' }, desc: { ko: '규타로와 육체를 공유하는 상현. 오비라 불리는 대형 띠를 이용한 현란한 술식의 사용자.', en: 'Shares a body with Gyutaro. Fights with powerful Obi sashes in dazzling techniques.' } },
-    };
-
-    function getCharInfo(className) {
-      const lang = localStorage.getItem('lang') || 'ko';
-      for (const [key, val] of Object.entries(CHARACTER_DB)) {
-        if (className.includes(key) || key.includes(className)) {
-          return { name: key, rank: val.rank[lang] || val.rank.ko, desc: val.desc[lang] || val.desc.ko };
-        }
-      }
-      return { name: className, rank: lang === 'en' ? 'Upper Moon · ???' : '상현 · ???', desc: lang === 'en' ? 'An unknown Upper Moon presence is felt...' : '알 수 없는 상현의 기운이 느껴집니다...' };
-    }
-
-    // ── TM 모델 ──
-    const MODEL_URL = 'https://teachablemachine.withgoogle.com/models/vlj9htQzg/';
-    let model = null, webcam = null;
-    let isRunning = false, currentTab = 'cam', uploadedImage = null;
-
-    async function loadModel() {
-      model = null;
-      document.getElementById('start-btn').disabled = true;
-      showLoading(true, t('index.loading'));
-      setStatus(t('index.status.loading'));
-      const MAX_RETRY = 3;
-      for (let attempt = 1; attempt <= MAX_RETRY; attempt++) {
-        try {
-          if (typeof tmImage === 'undefined') throw new Error('TeachableMachine 라이브러리 로드 실패. 네트워크를 확인해주세요.');
-          model = await tmImage.load(MODEL_URL + 'model.json', MODEL_URL + 'metadata.json');
-          setStatus(t('index.status.ready'));
-          document.getElementById('start-btn').disabled = false;
-          showLoading(false);
-          return;
-        } catch (e) {
-          console.error('[상현닮은꼴] loadModel 오류 (' + attempt + '/' + MAX_RETRY + '):', e);
-          if (attempt < MAX_RETRY) {
-            setStatus(t('index.status.retrying') + ' (' + attempt + '/' + MAX_RETRY + ')...');
-            await new Promise(function(r) { setTimeout(r, 1500 * attempt); });
-          }
-        }
-      }
-      showLoading(false);
-      var statusEl = document.getElementById('status-msg');
-      statusEl.innerHTML = t('index.status.fail') +
-        ' <button onclick="loadModel()" style="background:none;border:1px solid rgba(255,255,255,0.35);color:rgba(255,255,255,0.55);cursor:pointer;padding:2px 10px;border-radius:4px;font-size:11px;margin-left:8px;letter-spacing:1px;">' +
-        t('index.btn.retry') + '</button>';
-    }
-
-    // ── 탭 전환 ──
-    function switchTab(tab) {
-      currentTab = tab;
-      document.getElementById('tab-cam').classList.toggle('active', tab === 'cam');
-      document.getElementById('tab-upload').classList.toggle('active', tab === 'upload');
-      document.getElementById('scan-frame').style.display = tab === 'cam' ? 'block' : 'none';
-      document.getElementById('upload-area').classList.toggle('active-tab', tab === 'upload');
-      resetAll(false);
-    }
-
-    // ── 시작 버튼 ──
-    async function handleStart() {
-      if (!model) return;
-      if (currentTab === 'cam') await startWebcam();
-      else await analyzeUploadedImage();
-    }
-
-    // ── 웹캠 ──
-    async function startWebcam() {
-      if (isRunning) { await snapAndPredict(); return; }
-      try {
-        setStatus(t('index.status.cam-access'));
-        webcam = new tmImage.Webcam(220, 220, true);
-        await webcam.setup();
-        await webcam.play();
-        const container = document.getElementById('webcam-container');
-        document.getElementById('cam-placeholder')?.remove();
-        container.appendChild(webcam.canvas);
-        isRunning = true;
-        setScanAnimation(true);
-        document.getElementById('start-btn').textContent = t('index.btn.snap');
-        setStatus(t('index.status.scanning'));
-        loop();
-      } catch (e) {
-        setStatus(t('index.status.cam-fail'));
-        console.error(e);
-      }
-    }
-
-    async function loop() {
-      if (!isRunning) return;
-      webcam.update();
-      await predict(webcam.canvas);
-      requestAnimationFrame(loop);
-    }
-
-    async function snapAndPredict() {
-      setScanAnimation(false);
-      isRunning = false;
-      if (webcam) { webcam.stop(); webcam = null; }
-      document.getElementById('start-btn').textContent = t('index.btn.restart');
-      setStatus(t('index.status.done'));
-    }
-
-    // ── 이미지 업로드 ──
-    function onFileSelect(e) {
-      const file = e.target.files[0];
-      if (!file) return;
-      const reader = new FileReader();
-      reader.onload = (ev) => {
-        uploadedImage = new Image();
-        uploadedImage.onload = () => {
-          const prev = document.getElementById('preview-img');
-          prev.src = ev.target.result;
-          prev.style.display = 'block';
-          setStatus(t('index.status.img-ready'));
-        };
-        uploadedImage.src = ev.target.result;
-      };
-      reader.readAsDataURL(file);
-    }
-
-    const uploadArea = document.getElementById('upload-area');
-    uploadArea.addEventListener('dragover', e => { e.preventDefault(); uploadArea.style.borderColor = 'var(--gold)'; });
-    uploadArea.addEventListener('dragleave', () => { uploadArea.style.borderColor = ''; });
-    uploadArea.addEventListener('drop', e => {
-      e.preventDefault();
-      uploadArea.style.borderColor = '';
-      const file = e.dataTransfer.files[0];
-      if (file && file.type.startsWith('image/')) onFileSelect({ target: { files: [file] } });
-    });
-
-    async function analyzeUploadedImage() {
-      if (!uploadedImage) { setStatus(t('index.status.no-image')); return; }
-      setScanAnimation(true);
-      await predict(uploadedImage);
-      setScanAnimation(false);
-    }
-
-    // ── 예측 ──
-    async function predict(imageEl) {
-      if (!model) return;
-      const predictions = await model.predict(imageEl);
-      predictions.sort((a, b) => b.probability - a.probability);
-      const top = predictions[0];
-      const charInfo = getCharInfo(top.className);
-
-      document.getElementById('result-name').textContent = charInfo.name;
-      document.getElementById('result-rank').textContent = charInfo.rank;
-      document.getElementById('result-desc').textContent = charInfo.desc;
-      animateScore(Math.round(top.probability * 100));
-      renderAllPredictions(predictions);
-
-      const sec = document.getElementById('result-section');
-      sec.style.display = 'block';
-      sec.classList.add('show');
-    }
-
-    function animateScore(target) {
-      const el = document.getElementById('result-score');
-      let cur = 0;
-      const step = target / 40;
-      const t = setInterval(() => {
-        cur = Math.min(cur + step, target);
-        el.textContent = Math.round(cur) + '%';
-        if (cur >= target) clearInterval(t);
-      }, 20);
-    }
-
-    function renderAllPredictions(predictions) {
-      const container = document.getElementById('label-container');
-      container.innerHTML = '';
-      predictions.forEach((p, i) => {
-        const pct = (p.probability * 100).toFixed(1);
-        const row = document.createElement('div');
-        row.className = 'pred-row';
-
-        const nameSpan = document.createElement('span');
-        nameSpan.className = 'pred-name';
-        nameSpan.textContent = p.className;
-
-        const barWrap = document.createElement('div');
-        barWrap.className = 'pred-bar-wrap';
-        const bar = document.createElement('div');
-        bar.className = 'pred-bar ' + (i === 0 ? 'top' : 'other');
-        bar.dataset.pct = p.probability * 100;
-        barWrap.appendChild(bar);
-
-        const pctSpan = document.createElement('span');
-        pctSpan.className = 'pred-pct' + (i === 0 ? ' top' : '');
-        pctSpan.textContent = pct + '%';
-
-        row.appendChild(nameSpan);
-        row.appendChild(barWrap);
-        row.appendChild(pctSpan);
-        container.appendChild(row);
-      });
-      requestAnimationFrame(() => {
-        document.querySelectorAll('.pred-bar').forEach(bar => {
-          bar.style.width = bar.dataset.pct + '%';
-        });
-      });
-    }
-
-    // ── 초기화 ──
-    function resetAll(showMsg = true) {
-      if (webcam) { try { webcam.stop(); } catch(e){} webcam = null; }
-      isRunning = false;
-      setScanAnimation(false);
-
-      const container = document.getElementById('webcam-container');
-      container.innerHTML = '';
-      if (currentTab === 'cam') {
-        container.innerHTML = `<div class="cam-placeholder" id="cam-placeholder">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
-            <circle cx="12" cy="13" r="4"/>
-          </svg>
-          <span data-i18n="index.cam.placeholder">카메라를 시작하세요</span>
-        </div>`;
-      }
-
-      uploadedImage = null;
-      const prev = document.getElementById('preview-img');
-      prev.src = ''; prev.style.display = 'none';
-      document.getElementById('file-input').value = '';
-
-      const sec = document.getElementById('result-section');
-      sec.classList.remove('show'); sec.style.display = 'none';
-      document.getElementById('label-container').innerHTML = '';
-
-      document.getElementById('start-btn').textContent = t('index.btn.start');
-      if (showMsg) setStatus(model ? t('index.status.ready') : t('index.status.preparing'));
-    }
-
-    // ── 유틸 ──
-    function setStatus(msg) { document.getElementById('status-msg').textContent = msg; }
-    function showLoading(show, msg = '') {
-      const el = document.getElementById('loading-overlay');
-      el.classList.toggle('show', show);
-      if (msg) el.querySelector('.loading-text').textContent = msg;
-    }
-    function setScanAnimation(on) {
-      document.getElementById('scan-frame').classList.toggle('scanning', on);
-    }
-
-    // ── Disqus ──
-    var disqus_config = function () {
-      this.page.url = window.location.href;
-      this.page.identifier = '/';
-    };
-    (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://sanylee.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-    })();
-
-    // ── 배경 파티클 ──
-    (function() {
-      const canvas = document.getElementById('bg-canvas');
-      const ctx = canvas.getContext('2d');
-      let W, H, particles = [];
-      function resize() { W = canvas.width = window.innerWidth; H = canvas.height = window.innerHeight; }
-      resize(); window.addEventListener('resize', resize);
-      class Particle {
-        constructor() { this.reset(true); }
-        reset(init) {
-          this.x = Math.random() * W;
-          this.y = init ? Math.random() * H : H + 10;
-          this.size = Math.random() * 2 + 0.5;
-          this.speedY = -(Math.random() * 0.6 + 0.2);
-          this.speedX = (Math.random() - 0.5) * 0.3;
-          this.opacity = Math.random() * 0.5 + 0.1;
-          this.color = Math.random() > 0.5
-            ? `rgba(192,57,43,${this.opacity})`
-            : `rgba(240,192,64,${this.opacity * 0.6})`;
-        }
-        update() { this.x += this.speedX; this.y += this.speedY; if (this.y < -10) this.reset(); }
-        draw() { ctx.beginPath(); ctx.arc(this.x, this.y, this.size, 0, Math.PI*2); ctx.fillStyle = this.color; ctx.fill(); }
-      }
-      for (let i = 0; i < 80; i++) particles.push(new Particle());
-      (function animate() { ctx.clearRect(0,0,W,H); particles.forEach(p=>{p.update();p.draw();}); requestAnimationFrame(animate); })();
-    })();
-
-    // 초기 설정
-    document.getElementById('scan-frame').style.display = 'block';
-    loadModel();
-
-    // ── SNS 공유 ──
-    var _sfOpen = false;
-
-    function getShareText() {
-      var hasResult = document.getElementById('result-section').classList.contains('show');
-      var url = 'https://bs-pb2.pages.dev/';
-      var tags = '\n#귀멸의칼날 #상현닮은꼴 #귀멸AI #DemonSlayer';
-      if (hasResult) {
-        var name = (document.getElementById('result-name').textContent || '').trim();
-        var rank = (document.getElementById('result-rank').textContent || '').trim();
-        var score = (document.getElementById('result-score').textContent || '').trim();
-        if (name && name !== '—') {
-          return '🔥 귀멸의 칼날 상현 닮은꼴 테스트!\n나는 ' + name + '(' + rank + ')와 ' + score + ' 닮았다!\n너는 어떤 상현이랑 닮았어? 👇\n' + url + tags;
-        }
-      }
-      return '👁️ 귀멸의 칼날 상현 닮은꼴 AI 분석기\n내 얼굴이 어떤 상현 귀신과 닮았는지 무료로 바로 분석!\n' + url + tags;
-    }
-
-    function shareSNS(type) {
-      var text = getShareText();
-      var url = 'https://bs-pb2.pages.dev/';
-      if (type === 'native') {
-        if (navigator.share) {
-          navigator.share({ title: '귀멸의 칼날 상현 닮은꼴 AI 분석기', text: text, url: url }).catch(function(){});
-        } else { shareSNS('copy'); }
-      } else if (type === 'twitter') {
-        window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(text), '_blank', 'width=600,height=440,noopener');
-      } else if (type === 'facebook') {
-        window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(url) + '&quote=' + encodeURIComponent(text.split('\n')[0]), '_blank', 'width=600,height=440,noopener');
-      } else if (type === 'threads') {
-        window.open('https://www.threads.net/intent/post?text=' + encodeURIComponent(text), '_blank', 'width=600,height=440,noopener');
-      } else if (type === 'copy') {
-        var full = text;
-        var btn = document.getElementById('share-copy-btn');
-        if (navigator.clipboard) {
-          navigator.clipboard.writeText(full).then(function() { showCopyToast(); if(btn){btn.textContent='✅ 복사됨';setTimeout(function(){btn.textContent='🔗 링크 복사';},2200);} });
-        } else {
-          var ta = document.createElement('textarea');
-          ta.value = full; ta.style.cssText='position:fixed;opacity:0;';
-          document.body.appendChild(ta); ta.select(); document.execCommand('copy');
-          document.body.removeChild(ta); showCopyToast();
-          if(btn){btn.textContent='✅ 복사됨';setTimeout(function(){btn.textContent='🔗 링크 복사';},2200);}
-        }
-      }
-      if (typeof gtag !== 'undefined') gtag('event','share',{event_category:'SNS',event_label:type});
-    }
-
-    function showCopyToast() {
-      var t = document.getElementById('copy-toast');
-      t.style.opacity = '1';
-      setTimeout(function(){ t.style.opacity = '0'; }, 2500);
-    }
-
-    function toggleShareFloat() {
-      _sfOpen = !_sfOpen;
-      document.getElementById('sf-items').classList.toggle('open', _sfOpen);
-      document.getElementById('sf-main-btn').textContent = _sfOpen ? '✕' : '↗';
-    }
-
-    window.addEventListener('scroll', function() {
-      var sf = document.getElementById('share-float');
-      sf.style.display = window.scrollY > 300 ? 'flex' : 'none';
-    });
-    document.addEventListener('click', function(e) {
-      if (_sfOpen && !e.target.closest('.share-float')) {
-        _sfOpen = false;
-        document.getElementById('sf-items').classList.remove('open');
-        document.getElementById('sf-main-btn').textContent = '↗';
-      }
-    });
-
-    // 모바일이 아닌 경우 native 버튼 숨김
-    if (!navigator.share) {
-      var nb = document.getElementById('share-native-btn');
-      if (nb) nb.style.display = 'none';
-    }
-
-    // ── 결과 이미지 저장 (Canvas) ──
-    function downloadResultCard() {
-      var name  = (document.getElementById('result-name').textContent || '').trim();
-      var rank  = (document.getElementById('result-rank').textContent || '').trim();
-      var score = (document.getElementById('result-score').textContent || '').trim();
-      if (!name || name === '—') { setStatus('분석 결과가 없습니다. 먼저 분석을 진행해주세요.'); return; }
-
-      var W = 600, H = 380;
-      var cv = document.createElement('canvas');
-      cv.width = W; cv.height = H;
-      var c = cv.getContext('2d');
-
-      // 배경
-      c.fillStyle = '#05050f'; c.fillRect(0,0,W,H);
-      var bg = c.createRadialGradient(W/2,H/2,0,W/2,H/2,W*0.7);
-      bg.addColorStop(0,'rgba(92,10,138,0.25)');
-      bg.addColorStop(1,'rgba(192,57,43,0.12)');
-      c.fillStyle = bg; c.fillRect(0,0,W,H);
-
-      // 테두리
-      c.strokeStyle = 'rgba(192,57,43,0.6)'; c.lineWidth = 2;
-      c.strokeRect(10,10,W-20,H-20);
-      c.strokeStyle = 'rgba(240,192,64,0.15)'; c.lineWidth = 1;
-      c.strokeRect(16,16,W-32,H-32);
-
-      // 상단 레이블
-      c.fillStyle = 'rgba(240,192,64,0.7)';
-      c.font = 'bold 11px sans-serif';
-      c.textAlign = 'center';
-      c.fillText('귀멸의 칼날 상현 닮은꼴 AI 분석 결과', W/2, 48);
-
-      // 구분선
-      c.strokeStyle = 'rgba(192,57,43,0.4)'; c.lineWidth = 1;
-      c.beginPath(); c.moveTo(80,60); c.lineTo(W-80,60); c.stroke();
-
-      // 캐릭터 이름
-      c.fillStyle = '#ffffff';
-      c.font = 'bold 62px sans-serif';
-      c.fillText(name, W/2, 160);
-
-      // 랭크
-      c.fillStyle = '#c0392b';
-      c.font = 'bold 18px sans-serif';
-      c.fillText(rank, W/2, 192);
-
-      // 구분선2
-      c.strokeStyle = 'rgba(240,192,64,0.2)'; c.lineWidth = 1;
-      c.beginPath(); c.moveTo(180,210); c.lineTo(W-180,210); c.stroke();
-
-      // 유사도 점수
-      c.fillStyle = '#f0c040';
-      c.font = 'bold 80px sans-serif';
-      c.fillText(score, W/2, 300);
-      c.fillStyle = 'rgba(255,255,255,0.3)';
-      c.font = '13px sans-serif';
-      c.fillText('유사도', W/2, 322);
-
-      // 하단 URL + 해시태그
-      c.fillStyle = 'rgba(255,255,255,0.2)';
-      c.font = '11px sans-serif';
-      c.fillText('bs-pb2.pages.dev  |  #귀멸의칼날 #상현닮은꼴 #귀멸AI', W/2, 358);
-
-      // 다운로드
-      var link = document.createElement('a');
-      link.download = '상현닮은꼴_' + name + '_' + score + '.png';
-      link.href = cv.toDataURL('image/png');
-      link.click();
-      if (typeof gtag !== 'undefined') gtag('event','share',{event_category:'SNS',event_label:'image_save'});
-    }
-
-    // ── 별점 평가 ──
-    (function(){
-      var stars = document.querySelectorAll('.star-el');
-      var msg = document.getElementById('star-msg');
-      var labels = ['','별로에요','아쉬워요','괜찮아요','좋아요!','최고예요! 🔥'];
-      var saved = localStorage.getItem('geo_rating');
-      function paint(n){ stars.forEach(function(s){ s.style.color = parseInt(s.dataset.v) <= n ? '#f0c040' : 'rgba(255,255,255,0.2)'; }); }
-      if (saved) { paint(+saved); msg.textContent = '평가해주셔서 감사합니다! (' + saved + '/5)'; }
-      stars.forEach(function(s){
-        s.addEventListener('mouseenter', function(){ paint(+this.dataset.v); msg.textContent = labels[+this.dataset.v]; });
-        s.addEventListener('mouseleave', function(){ var sv=localStorage.getItem('geo_rating'); paint(sv?+sv:0); msg.textContent = sv?('평가해주셔서 감사합니다! ('+sv+'/5)'):''; });
-        s.addEventListener('click', function(){
-          var v = +this.dataset.v;
-          localStorage.setItem('geo_rating', v);
-          paint(v); msg.textContent = '평가해주셔서 감사합니다! (' + v + '/5) 🙏';
-          gtag('event','service_rating',{event_category:'GEO',event_label:'star_'+v,value:v});
-        });
-      });
-    })();
-  </script>
 </body>
 </html>

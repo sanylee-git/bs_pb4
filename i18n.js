@@ -441,8 +441,11 @@ function applyLang(lang) {
 }
 
 /* ── 공개 API ── */
+// index.html : main.js 가 rerenderForLang 을 등록하면 그것도 호출
+// sub-pages  : applyLang 만 실행 (data-i18n 방식 유지)
 function setLang(lang) {
   applyLang(lang);
+  if (typeof window.rerenderForLang === 'function') window.rerenderForLang(lang);
 }
 
 /* ── 페이지 로드 시 자동 적용 ── */
