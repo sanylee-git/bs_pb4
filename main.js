@@ -163,7 +163,7 @@ function renderHeader() {
   if (!el) return;
   var h    = SITE_CONFIG.header;
   var lang = getLang();
-  var titleLines = h.titleJp.split('\n');
+  var titleLines = tr(h.titleJp).split('\n');
 
   el.innerHTML =
     '<div class="header-deco">' + h.deco + '</div>' +
@@ -263,7 +263,7 @@ function renderGuide() {
   /* 별점 평가 */
   html +=
     '<div class="guide-card" id="rating-card" style="text-align:center;">' +
-      '<h2>' + g.ratingTitle + '</h2>' +
+      '<h2>' + tr(g.ratingTitle) + '</h2>' +
       '<p style="font-size:13px;color:rgba(255,255,255,0.5);margin-bottom:18px;">' + tr(g.ratingSubtitle) + '</p>' +
       '<div id="star-row" style="font-size:40px;letter-spacing:6px;cursor:pointer;line-height:1;margin-bottom:12px;">' +
         [1,2,3,4,5].map(function(v) {
@@ -284,13 +284,14 @@ function renderGuide() {
 function renderFooter() {
   var el = document.getElementById('site-footer');
   if (!el) return;
-  var f = SITE_CONFIG.footer;
+  var f    = SITE_CONFIG.footer;
+  var lang = getLang();
   el.innerHTML =
     '<div class="footer-links">' +
-      '<a href="/">홈</a>' +
-      '<a href="/about.html">소개</a>' +
-      '<a href="/privacy.html">개인정보처리방침</a>' +
-      '<a href="/contact.html">문의하기</a>' +
+      '<a href="/">'             + (lang === 'ko' ? '홈'              : 'Home')    + '</a>' +
+      '<a href="/about.html">'   + (lang === 'ko' ? '소개'            : 'About')   + '</a>' +
+      '<a href="/privacy.html">' + (lang === 'ko' ? '개인정보처리방침' : 'Privacy') + '</a>' +
+      '<a href="/contact.html">' + (lang === 'ko' ? '문의하기'         : 'Contact') + '</a>' +
     '</div>' +
     '<div class="footer-copy">' +
       f.mainText + '<br>' +
@@ -320,6 +321,9 @@ function renderStaticUIText() {
   // 카메라 플레이스홀더
   var camPH = document.getElementById('cam-placeholder-text');
   if (camPH) camPH.textContent = lang === 'ko' ? '카메라를 시작하세요' : 'Start camera';
+  // 모델 로딩 텍스트
+  var loadingText = document.querySelector('.loading-text');
+  if (loadingText) loadingText.textContent = lang === 'ko' ? '모델 불러오는 중...' : 'Loading model...';
   // 결과 레이블
   renderResultLabels();
   // SNS 해시태그
@@ -558,7 +562,7 @@ function renderAllPredictions(predictions) {
   predictions.forEach(function(p, i) {
     var pct  = (p.probability * 100).toFixed(1);
     var row  = document.createElement('div');  row.className = 'pred-row';
-    var ns   = document.createElement('span'); ns.className  = 'pred-name'; ns.textContent = p.className;
+    var ns   = document.createElement('span'); ns.className  = 'pred-name'; ns.textContent = getCharInfo(p.className).name;
     var bw   = document.createElement('div');  bw.className  = 'pred-bar-wrap';
     var bar  = document.createElement('div');  bar.className = 'pred-bar ' + (i === 0 ? 'top' : 'other');
     bar.dataset.pct = p.probability * 100;
@@ -855,27 +859,30 @@ function initStarRating() {
   var stars  = document.querySelectorAll('.star-el');
   var msgEl  = document.getElementById('star-msg');
   if (!stars.length || !msgEl) return;
-  var labels = SITE_CONFIG.guide.ratingLabels || ['','별로에요','아쉬워요','괜찮아요','좋아요!','최고예요! 🔥'];
-  var saved  = localStorage.getItem('geo_rating');
+  var lang     = getLang();
+  var rawLabels = SITE_CONFIG.guide.ratingLabels || ['','별로에요','아쉬워요','괜찮아요','좋아요!','최고예요! 🔥'];
+  var labels   = rawLabels.map(function(l) { return l && typeof l === 'object' ? (l[lang] || l.ko) : (l || ''); });
+  var thanksMsg = lang === 'ko' ? '평가해주셔서 감사합니다!' : 'Thanks for rating!';
+  var saved    = localStorage.getItem('geo_rating');
 
   function paint(n) {
     stars.forEach(function(s) {
       s.style.color = parseInt(s.dataset.v) <= n ? 'var(--gold)' : 'rgba(255,255,255,0.2)';
     });
   }
-  if (saved) { paint(+saved); msgEl.textContent = '평가해주셔서 감사합니다! (' + saved + '/5)'; }
+  if (saved) { paint(+saved); msgEl.textContent = thanksMsg + ' (' + saved + '/5)'; }
 
   stars.forEach(function(s) {
     s.addEventListener('mouseenter', function() { paint(+this.dataset.v); msgEl.textContent = labels[+this.dataset.v] || ''; });
     s.addEventListener('mouseleave', function() {
       var sv = localStorage.getItem('geo_rating');
       paint(sv ? +sv : 0);
-      msgEl.textContent = sv ? '평가해주셔서 감사합니다! (' + sv + '/5)' : '';
+      msgEl.textContent = sv ? thanksMsg + ' (' + sv + '/5)' : '';
     });
     s.addEventListener('click', function() {
       var v = +this.dataset.v;
       localStorage.setItem('geo_rating', v);
-      paint(v); msgEl.textContent = '평가해주셔서 감사합니다! (' + v + '/5) 🙏';
+      paint(v); msgEl.textContent = thanksMsg + ' (' + v + '/5) 🙏';
       if (typeof gtag !== 'undefined') gtag('event', 'service_rating', { event_category: 'GEO', event_label: 'star_' + v, value: v });
     });
   });

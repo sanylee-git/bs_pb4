@@ -51,7 +51,7 @@ var SITE_CONFIG = {
 
   header: {
     deco:    'Chainsaw Man',
-    titleJp: 'チェンソーマン\n캐릭터닮은꼴',
+    titleJp: { ko: 'チェンソーマン\n캐릭터닮은꼴', en: 'チェンソーマン\nCharacter Lookalike' },
     tagline: {
       ko: '당신은 어떤 체인소맨 캐릭터를 닮았을까?',
       en: 'Which Chainsaw Man character are you?',
@@ -421,12 +421,19 @@ var SITE_CONFIG = {
       },
     ],
 
-    ratingTitle:    '⭐ 서비스를 평가해주세요',
+    ratingTitle:    { ko: '⭐ 서비스를 평가해주세요', en: '⭐ Rate This Service' },
     ratingSubtitle: {
       ko: '체인소맨 캐릭터닮은꼴 AI 분석기, 어떠셨나요?',
       en: 'How was the Chainsaw Man Character Lookalike Analyzer?',
     },
-    ratingLabels: ['', '별로에요', '아쉬워요', '괜찮아요', '좋아요!', '최고예요! 🔥'],
+    ratingLabels: [
+      '',
+      { ko: '별로에요',     en: 'Not good'    },
+      { ko: '아쉬워요',     en: 'Okay'        },
+      { ko: '괜찮아요',     en: 'Good'        },
+      { ko: '좋아요!',      en: 'Great!'      },
+      { ko: '최고예요! 🔥', en: 'Amazing! 🔥' },
+    ],
 
   }, // end guide
 
