@@ -3,19 +3,19 @@
    ================================================================ */
 
 :root {
-  /* 기본값 (Reze 블루): main.js 가 site.config.js 의 theme 값으로 덮어씁니다 */
-  --crimson:          #1a91ff;
-  --crimson-rgb:      26, 145, 255;
-  --deep-crimson:     #003d80;
-  --deep-crimson-rgb: 0, 61, 128;
-  --gold:             #00d4ff;
-  --gold-rgb:         0, 212, 255;
-  --gold-glow:        #00d4ff;
-  --purple:           #0a1628;
-  --purple-rgb:       10, 22, 40;
-  --dark-bg:          #030810;
-  --card-bg:          rgba(4, 10, 28, 0.93);
-  --border-glow:      rgba(26, 145, 255, 0.6);
+  /* 기본값 (레제 퍼플+틸): main.js 가 site.config.js 의 theme 값으로 덮어씁니다 */
+  --crimson:          #8b5cf6;
+  --crimson-rgb:      139, 92, 246;
+  --deep-crimson:     #5b21b6;
+  --deep-crimson-rgb: 91, 33, 182;
+  --gold:             #22d3ee;
+  --gold-rgb:         34, 211, 238;
+  --gold-glow:        #22d3ee;
+  --purple:           #0d0520;
+  --purple-rgb:       13, 5, 32;
+  --dark-bg:          #050210;
+  --card-bg:          rgba(10, 4, 28, 0.93);
+  --border-glow:      rgba(139, 92, 246, 0.6);
   --nav-h:            60px;
   --text-muted:       rgba(255,255,255,0.55);
 }
@@ -26,6 +26,10 @@ html { scroll-behavior: smooth; }
 
 body {
   background-color: var(--dark-bg);
+  background-image: url('/images/reze-poster2.jpg');
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
   font-family: 'Noto Sans KR', sans-serif;
   color: #fff;
   min-height: 100vh;
@@ -33,16 +37,17 @@ body {
   position: relative;
 }
 
-/* 전기 대기광 레이어 */
+/* 레제 포스터 다크 오버레이 + 대기광 레이어 */
 body::before {
   content: '';
   position: fixed;
   inset: 0;
   background:
-    radial-gradient(ellipse at 15% 55%, rgba(var(--purple-rgb),0.28) 0%, transparent 55%),
-    radial-gradient(ellipse at 85% 15%, rgba(var(--crimson-rgb),0.18) 0%, transparent 50%),
-    radial-gradient(ellipse at 55% 88%, rgba(var(--deep-crimson-rgb),0.20) 0%, transparent 48%),
-    radial-gradient(ellipse at 50% 45%, rgba(var(--gold-rgb),0.04) 0%, transparent 60%);
+    radial-gradient(ellipse at 15% 55%, rgba(139,92,246,0.14) 0%, transparent 55%),
+    radial-gradient(ellipse at 85% 15%, rgba(34,211,238,0.09) 0%, transparent 50%),
+    radial-gradient(ellipse at 55% 88%, rgba(91,33,182,0.16) 0%, transparent 48%),
+    radial-gradient(ellipse at 50% 45%, rgba(34,211,238,0.03) 0%, transparent 60%),
+    rgba(5, 2, 16, 0.88);
   z-index: 0;
   pointer-events: none;
 }
@@ -76,7 +81,7 @@ body::after {
   position: fixed;
   top: 0; left: 0; right: 0;
   height: var(--nav-h);
-  background: rgba(3,8,16,0.94);
+  background: rgba(5,2,16,0.94);
   backdrop-filter: blur(18px);
   border-bottom: 1px solid rgba(var(--crimson-rgb),0.2);
   z-index: 999;
@@ -153,7 +158,7 @@ body::after {
 .nav-mobile {
   display: none;
   flex-direction: column;
-  background: rgba(3,8,16,0.97);
+  background: rgba(5,2,16,0.97);
   border-bottom: 1px solid rgba(var(--crimson-rgb),0.2);
   padding: 8px 12px 12px;
 }
@@ -481,7 +486,15 @@ body::after {
 }
 
 /* 헤더 */
-.site-header { width: 100%; text-align: center; padding: 32px 20px 16px; }
+.site-header {
+  width: 100%; text-align: center; padding: 40px 20px 20px;
+  background:
+    linear-gradient(180deg, transparent 0%, rgba(5,2,16,0.92) 80%),
+    url('/images/reze-poster1.jpg') center 22% / cover no-repeat;
+  border-radius: 16px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
 .header-deco {
   font-family: 'Orbitron', 'Noto Sans KR', sans-serif;
   font-size: clamp(9px, 1.8vw, 11px);
@@ -732,7 +745,7 @@ body::after {
 /* 로딩 */
 .loading-overlay {
   position: absolute; inset: 0;
-  background: rgba(3,8,16,0.9);
+  background: rgba(5,2,16,0.92);
   border-radius: 24px;
   display: flex; flex-direction: column;
   align-items: center; justify-content: center; gap: 14px;
@@ -763,9 +776,10 @@ body::after {
   margin-bottom: 14px;
   animation: pulseGlow 3.5s ease-in-out infinite;
   box-shadow:
-    0 0 40px rgba(var(--crimson-rgb),0.08),
+    0 0 40px rgba(var(--crimson-rgb),0.10),
+    0 0 80px rgba(var(--gold-rgb),0.05),
     0 0 0 1px rgba(var(--gold-rgb),0.05),
-    0 8px 32px rgba(0,0,0,0.4);
+    0 8px 32px rgba(0,0,0,0.5);
 }
 .demon-eye { width: 60px; height: 60px; margin: 0 auto 14px; }
 .demon-eye svg { width: 100%; height: 100%; }

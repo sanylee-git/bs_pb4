@@ -19,7 +19,7 @@ var SITE_CONFIG = {
      🌐 기본 사이트 정보
   ────────────────────────────────────────────────────────────── */
   siteUrl:  'https://your-domain.pages.dev/',   // ← 실제 배포 URL 로 교체
-  siteName: '체인소맨 닮은꼴',
+  siteName: '체인소맨 캐릭터닮은꼴',
   disqus:   '',   // Disqus 쇼트네임 (미사용 시 '' 로 유지)
 
 
@@ -27,12 +27,12 @@ var SITE_CONFIG = {
      🎨 테마 색상  ← 체인소맨 : 혈흑 + 카멜레온 오렌지 테마
   ────────────────────────────────────────────────────────────── */
   theme: {
-    primary:     '#1a91ff',           // 전기 블루 — 레제 파워 컬러
-    primaryDark: '#003d80',           // 딥 네이비 블루
-    gold:        '#00d4ff',           // 시안 / 전기 라이트 블루
-    accent:      '#0a1628',           // 딥 네이비 (악센트)
-    bg:          '#030810',           // 극한 네이비 블랙
-    cardBg:      'rgba(4,10,28,0.93)',// 다크 네이비 카드
+    primary:     '#8b5cf6',           // 바이올렛 퍼플 — 레제 꽃밭 포스터
+    primaryDark: '#5b21b6',           // 딥 퍼플
+    gold:        '#22d3ee',           // 시안 틸 — 레제 오션 포스터
+    accent:      '#0d0520',           // 극한 다크 퍼플
+    bg:          '#050210',           // 퍼플 블랙
+    cardBg:      'rgba(10,4,28,0.93)',// 다크 퍼플 카드
   },
 
 
@@ -50,8 +50,8 @@ var SITE_CONFIG = {
   },
 
   header: {
-    deco:    'Chainsaw Man · Part 1',
-    titleJp: 'チェンソーマン\n닮은꼴',
+    deco:    'Chainsaw Man',
+    titleJp: 'チェンソーマン\n캐릭터닮은꼴',
     tagline: {
       ko: '당신은 어떤 체인소맨 캐릭터를 닮았을까?',
       en: 'Which Chainsaw Man character are you?',
@@ -62,7 +62,7 @@ var SITE_CONFIG = {
       { ko: '아키',     en: 'Aki'     },
       { ko: '파워',     en: 'Power'   },
       { ko: '포치타',   en: 'Pochita' },
-      { ko: '1부',      en: 'Part 1'  },
+      { ko: '레제',     en: 'Reze'    },
     ],
   },
 
@@ -302,15 +302,15 @@ var SITE_CONFIG = {
      🔍 SEO
   ────────────────────────────────────────────────────────────── */
   seo: {
-    pageTitle:    '체인소맨 닮은꼴 | AI 캐릭터 분석기',
-    description:  '체인소맨 닮은꼴 AI 분석기! 내 얼굴이 덴지·마키마·아키·레제 중 어떤 캐릭터와 닮았는지 AI로 바로 분석. 웹캠 또는 사진 업로드 지원. 무료.',
-    keywords:     '체인소맨, 덴지, 마키마, 아키, 레제, 포치타, 코베니, 히메노, 닮은꼴, AI 분석, Chainsaw Man, CSM, lookalike, face analysis',
-    ogTitle:      '체인소맨 닮은꼴 AI 분석기',
-    ogDescription:'체인소맨 닮은꼴 무료 AI 분석기! 덴지·마키마·아키·레제·키시베·히메노·천사의 악마·포치타·코베니·요시다 중 내 얼굴과 가장 닮은 캐릭터를 즉시 분석.',
-    ogImage:      'https://your-domain.pages.dev/images/makima.png',  // ← 교체 필요
-    ogImageAlt:   '체인소맨 닮은꼴 AI 분석기',
-    appName:      '체인소맨닮은꼴',
-    appFullName:  'Chainsaw Man Lookalike AI Analyzer',
+    pageTitle:    '체인소맨 캐릭터닮은꼴 | AI 캐릭터 분석기',
+    description:  '체인소맨 캐릭터닮은꼴 AI 분석기! 내 얼굴이 덴지·마키마·아키·레제 중 어떤 캐릭터와 닮았는지 AI로 바로 분석. 웹캠 또는 사진 업로드 지원. 무료.',
+    keywords:     '체인소맨, 덴지, 마키마, 아키, 레제, 포치타, 코베니, 히메노, 캐릭터닮은꼴, AI 분석, Chainsaw Man, CSM, lookalike, face analysis',
+    ogTitle:      '체인소맨 캐릭터닮은꼴 AI 분석기',
+    ogDescription:'체인소맨 캐릭터닮은꼴 무료 AI 분석기! 덴지·마키마·아키·레제·키시베·히메노·천사의 악마·포치타·코베니·요시다 중 내 얼굴과 가장 닮은 캐릭터를 즉시 분석.',
+    ogImage:      'https://your-domain.pages.dev/images/reze.png',  // ← 교체 필요
+    ogImageAlt:   '체인소맨 캐릭터닮은꼴 AI 분석기',
+    appName:      '체인소맨캐릭터닮은꼴',
+    appFullName:  'Chainsaw Man Character Lookalike AI Analyzer',
     themeColor:   '#030810',
     datePublished:'2026-02-23',
     dateModified: '2026-02-23',
@@ -323,14 +323,14 @@ var SITE_CONFIG = {
   ────────────────────────────────────────────────────────────── */
   share: {
     hashtags:   '#체인소맨 #체인소맨닮은꼴 #ChainsawMan #체인소맨AI',
-    shareTitle: '체인소맨 닮은꼴 AI 분석기',
+    shareTitle: '체인소맨 캐릭터닮은꼴 AI 분석기',
     resultText: function(name, rank, score, url) {
       return '⛓️ 체인소맨 닮은꼴 테스트!\n나는 ' + name + '(' + rank + ')와 ' + score + ' 닮았다!\n너는 어떤 캐릭터랑 닮았어? 👇\n' + url;
     },
     defaultText: function(url) {
       return '⛓️ 체인소맨 닮은꼴 AI 분석기\n내 얼굴이 어떤 체인소맨 캐릭터와 닮았는지 무료로 바로 분석!\n' + url;
     },
-    resultCardTitle:    '체인소맨 닮은꼴 AI 분석 결과',
+    resultCardTitle:    '체인소맨 캐릭터닮은꼴 AI 분석 결과',
     resultCardFooter:   function(url, hashtags) { return url + '  |  ' + hashtags; },
     resultCardFilename: function(name, score) { return '체인소맨닮은꼴_' + name + '_' + score + '.png'; },
     scoreLabel: '유사도',
@@ -383,7 +383,7 @@ var SITE_CONFIG = {
     ],
 
     charGuideTitle:    { ko: '체인소맨 캐릭터 가이드', en: 'Chainsaw Man Character Guide' },
-    charGuideSubtitle: { ko: 'Chainsaw Man Part 1 — Character Encyclopedia', en: 'Chainsaw Man Part 1 — Character Encyclopedia' },
+    charGuideSubtitle: { ko: 'Chainsaw Man — Character Encyclopedia', en: 'Chainsaw Man — Character Encyclopedia' },
 
     aiTitle: { ko: '🧠 AI 작동 원리', en: '🧠 How the AI Works' },
     aiParas: [
@@ -433,8 +433,8 @@ var SITE_CONFIG = {
 
     ratingTitle:    '⭐ 서비스를 평가해주세요',
     ratingSubtitle: {
-      ko: '체인소맨 닮은꼴 AI 분석기, 어떠셨나요?',
-      en: 'How was the Chainsaw Man Lookalike Analyzer?',
+      ko: '체인소맨 캐릭터닮은꼴 AI 분석기, 어떠셨나요?',
+      en: 'How was the Chainsaw Man Character Lookalike Analyzer?',
     },
     ratingLabels: ['', '별로에요', '아쉬워요', '괜찮아요', '좋아요!', '최고예요! 🔥'],
 
