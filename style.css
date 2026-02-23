@@ -26,7 +26,7 @@ html { scroll-behavior: smooth; }
 
 body {
   background-color: var(--dark-bg);
-  background-image: url('/images/reze-poster2.jpg');
+  background-image: url('/images/reze-poster1.jpg');
   background-size: cover;
   background-position: center top;
   background-attachment: fixed;
@@ -486,15 +486,7 @@ body::after {
 }
 
 /* 헤더 */
-.site-header {
-  width: 100%; text-align: center; padding: 40px 20px 20px;
-  background:
-    linear-gradient(180deg, transparent 0%, rgba(5,2,16,0.92) 80%),
-    url('/images/reze-poster1.jpg') center 22% / cover no-repeat;
-  border-radius: 16px;
-  margin-bottom: 8px;
-  overflow: hidden;
-}
+.site-header { width: 100%; text-align: center; padding: 32px 20px 16px; }
 .header-deco {
   font-family: 'Orbitron', 'Noto Sans KR', sans-serif;
   font-size: clamp(9px, 1.8vw, 11px);
