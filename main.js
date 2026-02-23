@@ -647,10 +647,12 @@ function setScanAnimation(on) {
   Particle.prototype.reset = function(init) {
     this.x = Math.random() * W;
     this.y = init ? Math.random() * H : H + 10;
-    this.size   = Math.random() * 2 + 0.5;
-    this.speedY = -(Math.random() * 0.6 + 0.2);
-    this.speedX = (Math.random() - 0.5) * 0.3;
-    this.opacity = Math.random() * 0.5 + 0.1;
+    // 스파크: 소형 + 가끔 밝은 스파크
+    var isSpark = Math.random() > 0.7;
+    this.size   = isSpark ? Math.random() * 1 + 0.3 : Math.random() * 1.5 + 0.5;
+    this.speedY = isSpark ? -(Math.random() * 1.2 + 0.5) : -(Math.random() * 0.5 + 0.15);
+    this.speedX = (Math.random() - 0.5) * (isSpark ? 0.8 : 0.25);
+    this.opacity = isSpark ? Math.random() * 0.7 + 0.2 : Math.random() * 0.35 + 0.08;
     this.color = Math.random() > 0.5
       ? 'rgba(var(--crimson-rgb),' + this.opacity + ')'
       : 'rgba(var(--gold-rgb),' + (this.opacity * 0.6) + ')';
@@ -677,7 +679,7 @@ function setScanAnimation(on) {
     return 'rgba(' + r + ',' + g + ',' + b + ',' + alpha.toFixed(2) + ')';
   }
 
-  for (var i = 0; i < 80; i++) particles.push(new Particle());
+  for (var i = 0; i < 110; i++) particles.push(new Particle());
   (function animate() {
     ctx.clearRect(0, 0, W, H);
     particles.forEach(function(p) { p.update(); p.draw(); });

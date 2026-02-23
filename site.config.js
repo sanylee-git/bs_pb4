@@ -27,12 +27,12 @@ var SITE_CONFIG = {
      🎨 테마 색상  ← 체인소맨 : 혈흑 + 카멜레온 오렌지 테마
   ────────────────────────────────────────────────────────────── */
   theme: {
-    primary:     '#cc0000',          // 핏빛 레드
-    primaryDark: '#7a0000',          // 다크 블러드
-    gold:        '#ff6600',          // 체인소 불꽃 오렌지
-    accent:      '#1a0000',          // 딥 다크 레드
-    bg:          '#090909',          // 거의 순수 블랙
-    cardBg:      'rgba(12,4,4,0.92)', // 짙은 붉은빛 카드
+    primary:     '#1a91ff',           // 전기 블루 — 레제 파워 컬러
+    primaryDark: '#003d80',           // 딥 네이비 블루
+    gold:        '#00d4ff',           // 시안 / 전기 라이트 블루
+    accent:      '#0a1628',           // 딥 네이비 (악센트)
+    bg:          '#030810',           // 극한 네이비 블랙
+    cardBg:      'rgba(4,10,28,0.93)',// 다크 네이비 카드
   },
 
 
@@ -311,7 +311,7 @@ var SITE_CONFIG = {
     ogImageAlt:   '체인소맨 닮은꼴 AI 분석기',
     appName:      '체인소맨닮은꼴',
     appFullName:  'Chainsaw Man Lookalike AI Analyzer',
-    themeColor:   '#090909',
+    themeColor:   '#030810',
     datePublished:'2026-02-23',
     dateModified: '2026-02-23',
     appFeatures:  ['AI 얼굴 분석', '캐릭터 닮은꼴 매칭', '웹캠 지원', '사진 업로드', '무료 이용'],
