@@ -190,7 +190,6 @@ var SITE_CONFIG = {
       name:     { ko: '덴지',          en: 'Denji' },
       rank:     { ko: '체인소 하이브리드', en: 'Chainsaw Hybrid' },
       image:    '/images/denji.png',
-      imageWebp:'/images/denji.webp',
       cardDesc: {
         ko: '포치타와 계약한 <strong>체인소의 악마 하이브리드</strong>. 빚쟁이 야쿠자에 쫓기며 살다가 공안 특무에 합류한다. 빵과 여자친구를 꿈꾸는 단순하지만 순수한 욕망의 소유자. 마키마에 대한 맹목적인 감정으로 이용당하면서도 끝까지 살아남는 <strong>처절한 생존력</strong>의 주인공.',
         en: 'A <strong>Chainsaw Devil hybrid</strong> contracted with Pochita. Joins Public Safety after living as a yakuza debt slave. Driven by simple desires — bread and a girlfriend. Though manipulated by blind feelings for Makima, he survives to the end through sheer <strong>desperate tenacity</strong>.',
@@ -201,7 +200,6 @@ var SITE_CONFIG = {
       name:     { ko: '마키마',        en: 'Makima' },
       rank:     { ko: '지배의 악마',   en: 'Control Devil' },
       image:    '/images/makima.png',
-      imageWebp:'/images/makima.webp',
       cardDesc: {
         ko: '공안 정보 총무부 통제관. 실체는 <strong>지배의 악마</strong>로, 1부 최대 빌런. 압도적 카리스마와 미소 뒤에 모든 생명을 지배하려는 냉혹한 의지를 숨기고 있다. 덴지에게는 이상적인 존재였지만, 결국 가장 깊이 상처를 준 인물. <strong>공포 없이는 지배 불가능</strong>이라는 철칙을 가진다.',
         en: 'Public Safety Information Division controller. True identity: the <strong>Control Devil</strong>, the main villain of Part 1. Hides cold ambition to dominate all life behind overwhelming charisma. Denji\'s ideal figure who ultimately hurt him the deepest. Lives by the belief that <strong>domination requires fear</strong>.',
@@ -212,7 +210,6 @@ var SITE_CONFIG = {
       name:     { ko: '아키 하야카와', en: 'Aki Hayakawa' },
       rank:     { ko: '공안 특무',     en: 'Public Safety Special Forces' },
       image:    '/images/aki.png',
-      imageWebp:'/images/aki.webp',
       cardDesc: {
         ko: '<strong>여우 악마, 미래 악마, 저주의 검</strong>을 다루는 공안 특무 요원. 가족을 죽인 총의 악마에 복수하기 위해 목숨을 담보로 계약을 맺었다. 냉소적이지만 동료를 깊이 아끼며, 덴지에게 무뚝뚝하지만 진심으로 걱정하는 형 같은 존재. 비극적인 결말이 더욱 그를 기억하게 만든다.',
         en: 'Public Safety agent wielding <strong>Fox Devil, Future Devil, and a Cursed Sword</strong>. Made life-staking contracts to avenge his family killed by the Gun Devil. Cold on the surface but deeply protective of comrades — a gruff older-brother figure to Denji. His tragic end only makes him more memorable.',
@@ -223,7 +220,6 @@ var SITE_CONFIG = {
       name:     { ko: '레제',          en: 'Reze' },
       rank:     { ko: '폭탄 하이브리드', en: 'Bomb Hybrid' },
       image:    '/images/reze.png',
-      imageWebp:'/images/reze.webp',
       cardDesc: {
         ko: '<strong>소련이 창조한 폭탄 악마 하이브리드</strong>. 덴지의 체인소 심장을 탈취하는 임무를 띠고 접근했지만, 순수한 덴지에게 진짜 감정이 싹튼 비극적 인물. 폭발을 자유자재로 조종하는 압도적 전투력을 지녔으며, 체인소맨 1부에서 가장 강렬한 인상을 남긴 <strong>히로인이자 적</strong>.',
         en: 'A <strong>Bomb Devil hybrid created by the Soviet Union</strong>. Approached Denji to steal his Chainsaw heart, but developed real feelings for his pure nature — making her a tragic figure. Possesses overwhelming combat power through explosive mastery, and left the strongest impression in Part 1 as both <strong>heroine and enemy</strong>.',
@@ -234,7 +230,6 @@ var SITE_CONFIG = {
       name:     { ko: '키시베',        en: 'Kishibe' },
       rank:     { ko: '공안 최강 사냥꾼', en: 'Strongest Hunter' },
       image:    '/images/kishibe.png',
-      imageWebp:'/images/kishibe.webp',
       cardDesc: {
         ko: '공안 특무에서 <strong>가장 강한 인간 사냥꾼</strong>. 세 마리의 악마와 계약하고, 사랑했던 동료들을 모두 잃은 경험으로 인해 감정을 버린 살상 기계가 됐다. 덴지와 파워를 혹독하게 훈련시키지만, 인류를 지키려는 신념만큼은 흔들리지 않는다. <strong>체인소맨 세계관에서 가장 냉혹한 합리주의자</strong>.',
         en: 'The <strong>strongest human hunter</strong> in Public Safety. After contracting with three devils and losing all the comrades he loved, he became an emotionless killing machine. Trains Denji and Power mercilessly, yet his conviction to protect humanity never wavers. <strong>The most cold-blooded pragmatist in the Chainsaw Man universe</strong>.',
@@ -245,7 +240,6 @@ var SITE_CONFIG = {
       name:     { ko: '히메노',        en: 'Himeno' },
       rank:     { ko: '공안 특무',     en: 'Public Safety Special Forces' },
       image:    '/images/himeno.png',
-      imageWebp:'/images/himeno.webp',
       cardDesc: {
         ko: '<strong>유령 악마</strong>와 계약해 오른눈을 대가로 바친 공안 특무 요원. 지금까지 파트너를 모두 잃은 죄책감을 안고, 아키가 살아남기를 누구보다 바랐다. 겉으로는 쿨한 선배처럼 보이지만 내면엔 깊은 상처를 숨긴 캐릭터. 덴지에게 솔직한 감정을 드러낸 <strong>따뜻하고 슬픈 인물</strong>.',
         en: 'A Public Safety agent contracted with the <strong>Ghost Devil</strong>, having sacrificed her right eye. Carries guilt from losing every previous partner, and wishes for Aki\'s survival more than anything. Appears cool on the surface but hides deep wounds — a <strong>warm yet tragic character</strong> who showed genuine feelings for Denji.',
@@ -256,7 +250,6 @@ var SITE_CONFIG = {
       name:     { ko: '천사의 악마',   en: 'Angel Devil' },
       rank:     { ko: '공안 특무 · 악마', en: 'Public Safety · Devil' },
       image:    '/images/angel-devil.png',
-      imageWebp:'/images/angel-devil.webp',
       cardDesc: {
         ko: '천사의 모습을 한 악마로, <strong>접촉만으로 인간의 수명을 흡수</strong>하는 능력을 가진다. 흡수한 수명으로 무기를 창조할 수 있어 전투력이 막강하다. 인간을 혐오하지만 공안에서 일하는 아이러니한 존재. 키시베의 말에 따르면 악마들 중에서도 <strong>상위권 전투력</strong>을 가진다.',
         en: 'A devil in the form of an angel who <strong>absorbs human life spans through touch</strong>. Can forge powerful weapons from absorbed lifespans. An ironic existence who hates humans yet works for Public Safety. According to Kishibe, possesses <strong>top-tier combat power</strong> among all devils.',
@@ -267,7 +260,6 @@ var SITE_CONFIG = {
       name:     { ko: '포치타',        en: 'Pochita' },
       rank:     { ko: '체인소의 악마', en: 'Chainsaw Devil' },
       image:    '/images/pochita.png',
-      imageWebp:'/images/pochita.webp',
       cardDesc: {
         ko: '체인소의 악마의 진짜 모습. 다른 악마들에게 쫓기다 덴지를 만나 <strong>강아지 형태로 계약</strong>을 맺은 뒤 그의 심장이 됐다. 자신에게 상냥하게 대해준 덴지를 지키기 위해 스스로를 희생한 존재. 체인소맨 악마들 중에서도 <strong>역대급 두려움의 대상</strong>으로 알려진 존재.',
         en: 'The true form of the Chainsaw Devil. Pursued by other devils, met Denji and <strong>contracted in dog form</strong>, becoming his heart. Sacrificed himself to protect Denji who had been kind to him. Among all Chainsaw Man devils, known as an <strong>object of legendary fear</strong>.',
@@ -278,7 +270,6 @@ var SITE_CONFIG = {
       name:     { ko: '코베니',        en: 'Kobeni' },
       rank:     { ko: '공안 특무',     en: 'Public Safety Special Forces' },
       image:    '/images/kobeni.png',
-      imageWebp:'/images/kobeni.webp',
       cardDesc: {
         ko: '항상 불운하고 겁이 많아 보이지만, 공안 특무 중에서도 <strong>손에 꼽히는 전투 실력</strong>을 갖고 있다. 8형제의 학비를 벌기 위해 공안에 입사한 현실적인 인물. 악마와의 계약 내용을 끝까지 공개하지 않는 미스터리한 면이 있다. <strong>위기에서 돌변하는 반전 매력</strong>이 팬들에게 큰 사랑을 받는 캐릭터.',
         en: 'Always seems unlucky and cowardly, yet possesses <strong>top-tier combat skill</strong> among all Public Safety agents. Joined Public Safety to pay tuition for eight siblings — grounded in real-world motivations. Maintains mystery by never revealing her devil contract. A fan-favorite for her <strong>surprising reversal charm in crisis situations</strong>.',
@@ -289,7 +280,6 @@ var SITE_CONFIG = {
       name:     { ko: '요시다',        en: 'Yoshida' },
       rank:     { ko: 'G기관 소속',    en: 'G-Organization' },
       image:    '/images/yoshida.png',
-      imageWebp:'/images/yoshida.webp',
       cardDesc: {
         ko: 'G기관(정부 비밀 조직) 소속으로 <strong>문어 악마와 계약</strong>한 미스터리한 청년. 덴지를 겉으로는 친구처럼 대하지만, 실제 목적은 체인소맨을 감시·통제하는 것이다. 감정을 거의 드러내지 않으면서도 뛰어난 전투력을 가진 <strong>베일에 싸인 강자</strong>.',
         en: 'A mysterious young man from G-Organization (a secret government agency), <strong>contracted with the Octopus Devil</strong>. Treats Denji as a friend on the surface, but his true purpose is to monitor and control Chainsaw Man. An <strong>enigmatic powerhouse</strong> who rarely shows emotion but possesses exceptional combat ability.',
