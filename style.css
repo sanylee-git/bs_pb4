@@ -869,6 +869,7 @@ body::after {
 @media (max-width: 420px) {
   .char-card-inner { flex-direction: column; }
   .char-img-wrap { width: 100%; height: 180px; }
+  .char-img-wrap img { object-fit: contain; object-position: center; }
 }
 
 /* How-to */

@@ -122,6 +122,19 @@ const LANG_DATA = {
     'about.s5.p1': '서비스 이용 중 불편하신 점, 버그 신고, 개선 제안 등이 있으시면 언제든지 문의해주세요. 귀멸의 칼날 팬 여러분의 소중한 피드백으로 더 좋은 서비스를 만들어 나가겠습니다.',
     'about.s5.link-html': '→ <a href="/contact.html">문의 페이지로 이동하기</a>',
 
+    /* ── about.html — FAQ ── */
+    'about.faq.h2': '❓ 자주 묻는 질문 (Q&A)',
+    'about.faq.q1': 'Q. 이 서비스는 어떻게 작동하나요?',
+    'about.faq.a1': '웹캠 또는 이미지를 업로드하면, 브라우저 내 TensorFlow.js 기반 AI 모델이 얼굴 특징을 분석합니다. 결과는 코쿠시보·도우마·아카자·한텐구·교코·규타로/다키와의 유사도 퍼센트로 즉시 표시됩니다. 서버 전송 없이 모든 처리가 기기 내에서 완결됩니다.',
+    'about.faq.q2': 'Q. 이 서비스는 왜 개인정보가 안전한가요?',
+    'about.faq.a2': '모든 이미지 처리가 사용자의 브라우저에서만 완결되기 때문입니다. TensorFlow.js를 이용한 클라이언트-사이드 AI 추론 방식으로, 얼굴 데이터는 어떤 외부 서버에도 전송되지 않습니다. 분석 완료 즉시 메모리에서 삭제됩니다.',
+    'about.faq.q3': 'Q. AI 모델은 어떻게 학습되었나요?',
+    'about.faq.a3': '구글의 Teachable Machine 플랫폼으로 귀멸의 칼날 상현 캐릭터 이미지를 학습시킨 딥러닝 이미지 분류 모델입니다. 각 상현 캐릭터별 이미지 데이터를 수집해 얼굴 특징 기반 분류 모델을 훈련했습니다. 모델은 Teachable Machine 공개 인프라에서 호스팅됩니다.',
+    'about.faq.q4': 'Q. 어떤 기기와 브라우저에서 사용할 수 있나요?',
+    'about.faq.a4': 'PC(Windows/Mac)와 모바일(iOS/Android) 모두에서 이용 가능합니다. Chrome, Safari, Firefox, Edge 최신 버전을 지원합니다. 카메라 기능은 HTTPS 환경에서만 동작하며, 이미지 업로드 기능은 모든 환경에서 사용 가능합니다.',
+    'about.faq.q5': 'Q. 이 서비스는 공식 귀멸의 칼날 제품인가요?',
+    'about.faq.a5': '비공식 팬 제작 엔터테인먼트 서비스입니다. 귀멸의 칼날의 모든 저작권은 원작자 吾峠呼世晴 및 集英社에 귀속됩니다. 본 서비스는 공식 제작사·배급사와 무관한 팬 제작 비상업적 엔터테인먼트 콘텐츠입니다.',
+
     /* ── privacy.html ── */
     'privacy.page-title': '개인정보처리방침',
     'privacy.page-sub':   '본 서비스가 수집·이용하는 정보에 대해 안내합니다',
@@ -200,6 +213,23 @@ const LANG_DATA = {
     'contact.faq.a3': 'Chrome, Safari, Firefox, Edge 등 최신 버전의 브라우저에서 이용 가능합니다. 카메라 기능은 HTTPS 환경에서만 동작하며, 브라우저의 카메라 접근 허용이 필요합니다.',
     'contact.faq.q4': 'Q. 모바일에서도 되나요?',
     'contact.faq.a4': '네! iOS Safari, Android Chrome에서도 이용 가능합니다. 이미지 업로드 탭을 선택하면 앨범에서 사진을 직접 업로드하거나 카메라로 촬영할 수 있습니다.',
+    'contact.faq.q5': 'Q. 문의 답변까지 얼마나 걸리나요?',
+    'contact.faq.a5': '보통 1~3 영업일 내로 답변 드립니다. 문의량에 따라 차이가 있을 수 있으나, 접수된 모든 문의에 성실히 답변하겠습니다. 빠른 확인을 위해 문의 유형을 정확히 선택해 주시면 도움이 됩니다.',
+    'contact.faq.q6': 'Q. 저작권 관련 문의는 어떻게 하나요?',
+    'contact.faq.a6': "문의 양식에서 '저작권 관련'을 선택하고 내용을 기재해 주세요. 귀멸의 칼날 이미지·콘텐츠 관련 저작권 문제를 발견하셨다면 즉시 처리하겠습니다. 공식 저작권자(吾峠呼世晴/集英社) 측의 요청은 최우선으로 처리됩니다.",
+
+    /* ── privacy.html — FAQ ── */
+    'privacy.faq.h2': '❓ 개인정보 관련 자주 묻는 질문',
+    'privacy.faq.q1': 'Q. 카메라로 촬영한 데이터가 서버에 저장되나요?',
+    'privacy.faq.a1': '아닙니다. 카메라 데이터는 서버에 전혀 저장되지 않습니다. 모든 이미지 처리는 사용자의 브라우저 내에서만 이루어지며, AI 분석 완료 즉시 메모리에서 삭제됩니다. 외부 서버 전송 없이 100% 로컬 처리됩니다.',
+    'privacy.faq.q2': 'Q. 쿠키를 차단하면 서비스를 이용할 수 없나요?',
+    'privacy.faq.a2': 'AI 분석 핵심 기능은 쿠키 없이도 정상 이용 가능합니다. 쿠키를 차단하면 Google AdSense 맞춤 광고가 표시되지 않고, Disqus 댓글 기능이 제한될 수 있습니다. 기본 기능에는 영향이 없습니다.',
+    'privacy.faq.q3': 'Q. Google AdSense 맞춤 광고를 거부할 수 있나요?',
+    'privacy.faq.a3-html': '네, <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener">Google 광고 설정</a>에서 맞춤 광고를 언제든지 비활성화할 수 있습니다. <a href="https://optout.networkadvertising.org/" target="_blank" rel="noopener">NAI 옵트아웃 페이지</a>에서도 제3자 광고 쿠키를 일괄 차단할 수 있습니다.',
+    'privacy.faq.q4': 'Q. 만 14세 미만 어린이도 이용 가능한가요?',
+    'privacy.faq.a4': '만 14세 미만 이용자는 반드시 보호자의 동의 하에 서비스를 이용해야 합니다. 본 서비스는 아동의 개인정보를 의도적으로 수집하지 않으며, 해당 사실이 확인될 경우 즉시 삭제 조치합니다.',
+    'privacy.faq.q5': 'Q. 개인정보 열람·수정·삭제를 요청할 수 있나요?',
+    'privacy.faq.a5-html': '네, <a href="/contact.html">문의 페이지</a>를 통해 개인정보 관련 요청을 하실 수 있습니다. 카메라·이미지 데이터는 분석 즉시 자동 삭제되어 별도 보관되지 않습니다. 문의 양식 제출 시 수집된 이메일 등 정보는 요청 시 삭제해 드립니다.',
   },
 
   /* ═══════════════════════════════════ English ═══════════════════════════════════ */
@@ -318,6 +348,19 @@ const LANG_DATA = {
     'about.s5.p1': 'If you encounter any issues, want to report a bug, or have suggestions for improvement, please reach out anytime. Your feedback helps us make a better service for Demon Slayer fans everywhere.',
     'about.s5.link-html': '→ <a href="/contact.html">Go to Contact page</a>',
 
+    /* ── about.html — FAQ ── */
+    'about.faq.h2': '❓ FAQ (Q&A)',
+    'about.faq.q1': 'Q. How does this service work?',
+    'about.faq.a1': 'Upload a webcam shot or image and the TensorFlow.js-based AI model runs directly in your browser to analyze facial features. Results show similarity percentages for Kokushibo, Douma, Akaza, Hantengu, Gyokko, and Gyutaro/Daki instantly. All processing happens on your device with no server transmission.',
+    'about.faq.q2': 'Q. Why is my personal information safe?',
+    'about.faq.a2': 'Because all image processing is completed only within your browser. Using client-side AI inference with TensorFlow.js, facial data is never transmitted to any external server. Data is deleted from memory immediately after analysis.',
+    'about.faq.q3': 'Q. How was the AI model trained?',
+    'about.faq.a3': 'It is a deep learning image classification model trained on Demon Slayer Upper Moon character images using Google\'s Teachable Machine platform. Image data for each Upper Moon character was collected to train a facial feature-based classification model. The model is hosted on Teachable Machine\'s public infrastructure.',
+    'about.faq.q4': 'Q. Which devices and browsers are supported?',
+    'about.faq.a4': 'Available on both PC (Windows/Mac) and mobile (iOS/Android). Supports the latest versions of Chrome, Safari, Firefox, and Edge. Camera functionality requires HTTPS, while image upload works in all environments.',
+    'about.faq.q5': 'Q. Is this an official Demon Slayer product?',
+    'about.faq.a5': 'This is an unofficial fan-made entertainment service. All rights to Demon Slayer belong to the original creator 吾峠呼世晴 and 集英社 (Shueisha). This service is non-commercial fan content with no affiliation to the official production or distribution companies.',
+
     /* ── privacy.html ── */
     'privacy.page-title': 'Privacy Policy',
     'privacy.page-sub':   'Information about the data this service collects and uses',
@@ -396,6 +439,23 @@ const LANG_DATA = {
     'contact.faq.a3': 'Available on the latest versions of Chrome, Safari, Firefox, Edge, and more. Camera functionality requires HTTPS and camera permission from your browser.',
     'contact.faq.q4': 'Q. Does it work on mobile?',
     'contact.faq.a4': 'Yes! Available on iOS Safari and Android Chrome. Select the Upload Image tab to upload directly from your album or take a photo with your camera.',
+    'contact.faq.q5': 'Q. How long does a reply take?',
+    'contact.faq.a5': 'We typically respond within 1–3 business days. Response times may vary depending on inquiry volume, but we will respond to every inquiry. Selecting the correct inquiry type will help us process your request faster.',
+    'contact.faq.q6': 'Q. How do I contact you about copyright?',
+    'contact.faq.a6': 'Select "Copyright Related" in the inquiry form and describe the issue. If you\'ve found a copyright issue with Demon Slayer images or content, we\'ll address it immediately. Requests from official rights holders (吾峠呼世晴/集英社) are prioritized.',
+
+    /* ── privacy.html — FAQ ── */
+    'privacy.faq.h2': '❓ Privacy FAQ',
+    'privacy.faq.q1': 'Q. Is camera data stored on the server?',
+    'privacy.faq.a1': 'No. Camera data is never stored on any server. All image processing happens solely within your browser and is deleted from memory immediately after AI analysis is complete. 100% local processing with no external server transmission.',
+    'privacy.faq.q2': 'Q. Can I use the service if I block cookies?',
+    'privacy.faq.a2': 'The core AI analysis feature works fine without cookies. Blocking cookies means Google AdSense personalized ads won\'t show, and Disqus comments may be limited. Core functionality is not affected.',
+    'privacy.faq.q3': 'Q. Can I opt out of Google AdSense personalized ads?',
+    'privacy.faq.a3-html': 'Yes, you can disable personalized ads anytime in <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener">Google Ad Settings</a>. You can also block third-party advertising cookies on the <a href="https://optout.networkadvertising.org/" target="_blank" rel="noopener">NAI opt-out page</a>.',
+    'privacy.faq.q4': 'Q. Can children under 14 use this service?',
+    'privacy.faq.a4': 'Users under 14 must use this service with parental consent. This service does not intentionally collect personal information from children, and if we become aware such data has been collected, it will be deleted immediately.',
+    'privacy.faq.q5': 'Q. Can I request access, correction, or deletion of my data?',
+    'privacy.faq.a5-html': 'Yes, you can make privacy-related requests via our <a href="/contact.html">Contact page</a>. Camera/image data is automatically deleted after analysis and not stored separately. Information collected through the contact form (such as email) will be deleted upon request.',
   }
 };
 

@@ -332,6 +332,15 @@ function renderStaticUIText() {
   // 댓글 제목
   var disqusTitle = document.querySelector('.disqus-title');
   if (disqusTitle) disqusTitle.textContent = lang === 'ko' ? '💬 댓글 · Comments' : '💬 Comments';
+  // 시작 버튼 텍스트
+  var startBtn = document.getElementById('start-btn');
+  if (startBtn) {
+    if (isRunning) {
+      startBtn.textContent = lang === 'ko' ? '📸 스냅샷 찍기' : '📸 Take Snapshot';
+    } else {
+      startBtn.textContent = lang === 'ko' ? '⚡ 분석 시작' : '⚡ Start Analysis';
+    }
+  }
 }
 
 
