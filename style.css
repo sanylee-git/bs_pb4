@@ -1045,3 +1045,122 @@ body::after {
   .scan-frame { width: 180px; height: 180px; }
   #webcam-container, #webcam-container canvas, #webcam-container video, #preview-img { width: 160px; height: 160px; }
 }
+
+/* ================================================================
+   신규 SEO/GEO 요소 스타일 (기존 코드 미변경, 하단 추가)
+   ================================================================ */
+
+/* ── 공통: content-section 과 동일한 박스 기반 ── */
+.key-takeaways,
+.author-bio {
+  width: min(760px, 100%);
+  margin: 0 auto 20px;
+  background: var(--card-bg);
+  border: 1px solid rgba(var(--crimson-rgb), 0.18);
+  border-radius: 20px;
+  padding: 32px 28px;
+  backdrop-filter: blur(18px);
+  box-shadow:
+    0 0 40px rgba(var(--crimson-rgb), 0.05),
+    0 4px 24px rgba(0,0,0,0.3),
+    inset 0 1px 0 rgba(255,255,255,0.04);
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Key Takeaways 내부 ── */
+.kt-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(var(--crimson-rgb), 0.18);
+  letter-spacing: 1px;
+}
+.kt-list {
+  list-style: none;
+  padding-left: 20px;
+  margin: 10px 0 0;
+}
+.kt-list li {
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+  position: relative;
+}
+.kt-list li::before {
+  content: '▸';
+  position: absolute;
+  left: -18px;
+  color: var(--gold);
+  font-size: 11px;
+  top: 3px;
+}
+.kt-list li strong {
+  color: rgba(255,255,255,0.9);
+}
+
+/* ── Author Bio 내부 ── */
+.author-bio {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.author-bio-avatar {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  border-radius: 50%;
+  background: rgba(var(--crimson-rgb), 0.15);
+  border: 1px solid rgba(var(--gold-rgb), 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  line-height: 1;
+}
+.author-bio-info {
+  flex: 1;
+}
+.author-bio-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(var(--crimson-rgb), 0.18);
+  letter-spacing: 1px;
+}
+.author-bio-desc {
+  font-size: 14px;
+  line-height: 1.85;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+}
+.author-bio-meta {
+  font-size: 13px;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+}
+.author-bio-meta time {
+  color: var(--gold);
+}
+
+/* ── AdSense 광고 컨테이너 ── */
+.ad-container {
+  width: min(760px, 100%);
+  margin: 0 auto 20px;
+  min-height: 90px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .key-takeaways,
+  .author-bio { padding: 24px 20px; }
+  .author-bio { flex-direction: column; align-items: center; text-align: center; }
+  .author-bio-avatar { width: 44px; height: 44px; min-width: 44px; }
+}

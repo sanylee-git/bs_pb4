@@ -20,4 +20,22 @@ Allow: /
 User-agent: anthropic-ai
 Allow: /
 
+User-agent: CCBot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
 Sitemap: https://bs-pb2.pages.dev/sitemap.xml

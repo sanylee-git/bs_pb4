@@ -18,7 +18,7 @@ var SITE_CONFIG = {
   /* ──────────────────────────────────────────────────────────────
      🌐 기본 사이트 정보
   ────────────────────────────────────────────────────────────── */
-  siteUrl:  'https://your-domain.pages.dev/',   // ← 실제 배포 URL 로 교체
+  siteUrl:  'https://bs-pb2.pages.dev/',
   siteName: '체인소맨 캐릭터닮은꼴',
   disqus:   '',   // Disqus 쇼트네임 (미사용 시 '' 로 유지)
 
@@ -297,13 +297,13 @@ var SITE_CONFIG = {
     keywords:     '체인소맨, 덴지, 마키마, 아키, 레제, 포치타, 코베니, 히메노, 캐릭터닮은꼴, AI 분석, Chainsaw Man, CSM, lookalike, face analysis',
     ogTitle:      '체인소맨 캐릭터닮은꼴 AI 분석기',
     ogDescription:'체인소맨 캐릭터닮은꼴 무료 AI 분석기! 덴지·마키마·아키·레제·키시베·히메노·천사의 악마·포치타·코베니·요시다 중 내 얼굴과 가장 닮은 캐릭터를 즉시 분석.',
-    ogImage:      'https://your-domain.pages.dev/images/reze.png',  // ← 교체 필요
+    ogImage:      'https://bs-pb2.pages.dev/images/reze.png',
     ogImageAlt:   '체인소맨 캐릭터닮은꼴 AI 분석기',
     appName:      '체인소맨캐릭터닮은꼴',
     appFullName:  'Chainsaw Man Character Lookalike AI Analyzer',
     themeColor:   '#030810',
     datePublished:'2026-02-23',
-    dateModified: '2026-02-23',
+    dateModified: '2026-03-11',
     appFeatures:  ['AI 얼굴 분석', '캐릭터 닮은꼴 매칭', '웹캠 지원', '사진 업로드', '무료 이용'],
   },
 
