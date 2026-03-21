@@ -3,7 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://bs-pb2.pages.dev/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://bs-pb2.pages.dev/"/>
@@ -12,29 +12,82 @@
   </url>
   <url>
     <loc>https://bs-pb2.pages.dev/about.html</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://bs-pb2.pages.dev/about.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bs-pb2.pages.dev/about.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bs-pb2.pages.dev/about.html"/>
   </url>
   <url>
+    <loc>https://bs-pb2.pages.dev/guide.html</loc>
+    <lastmod>2026-03-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bs-pb2.pages.dev/guide.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bs-pb2.pages.dev/guide.html"/>
+  </url>
+  <url>
+    <loc>https://bs-pb2.pages.dev/how-it-works.html</loc>
+    <lastmod>2026-03-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bs-pb2.pages.dev/how-it-works.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bs-pb2.pages.dev/how-it-works.html"/>
+  </url>
+  <url>
+    <loc>https://bs-pb2.pages.dev/characters.html</loc>
+    <lastmod>2026-03-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bs-pb2.pages.dev/characters.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bs-pb2.pages.dev/characters.html"/>
+  </url>
+  <url>
+    <loc>https://bs-pb2.pages.dev/faq.html</loc>
+    <lastmod>2026-03-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bs-pb2.pages.dev/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bs-pb2.pages.dev/faq.html"/>
+  </url>
+  <url>
+    <loc>https://bs-pb2.pages.dev/troubleshoot.html</loc>
+    <lastmod>2026-03-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bs-pb2.pages.dev/troubleshoot.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bs-pb2.pages.dev/troubleshoot.html"/>
+  </url>
+  <url>
     <loc>https://bs-pb2.pages.dev/contact.html</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://bs-pb2.pages.dev/contact.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bs-pb2.pages.dev/contact.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bs-pb2.pages.dev/contact.html"/>
   </url>
   <url>
     <loc>https://bs-pb2.pages.dev/privacy.html</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bs-pb2.pages.dev/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bs-pb2.pages.dev/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://bs-pb2.pages.dev/terms.html</loc>
+    <lastmod>2026-03-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bs-pb2.pages.dev/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bs-pb2.pages.dev/terms.html"/>
+  </url>
+  <url>
+    <loc>https://bs-pb2.pages.dev/changelog.html</loc>
+    <lastmod>2026-03-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://bs-pb2.pages.dev/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bs-pb2.pages.dev/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bs-pb2.pages.dev/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bs-pb2.pages.dev/changelog.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bs-pb2.pages.dev/changelog.html"/>
   </url>
 </urlset>

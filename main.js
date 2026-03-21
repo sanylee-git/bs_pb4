@@ -293,6 +293,15 @@ function renderFooter() {
       '<a href="/privacy.html">' + (lang === 'ko' ? '개인정보처리방침' : 'Privacy') + '</a>' +
       '<a href="/contact.html">' + (lang === 'ko' ? '문의하기'         : 'Contact') + '</a>' +
     '</div>' +
+    '<div class="footer-links" style="margin-top:8px;">' +
+      '<a href="/guide.html">'        + (lang === 'ko' ? '사진 가이드'  : 'Photo Guide')    + '</a>' +
+      '<a href="/how-it-works.html">' + (lang === 'ko' ? 'AI 원리'      : 'How It Works')   + '</a>' +
+      '<a href="/faq.html">'          + 'FAQ'                                                + '</a>' +
+      '<a href="/characters.html">'   + (lang === 'ko' ? '캐릭터 도감'  : 'Characters')     + '</a>' +
+      '<a href="/troubleshoot.html">' + (lang === 'ko' ? '오류 해결'    : 'Troubleshoot')   + '</a>' +
+      '<a href="/terms.html">'        + (lang === 'ko' ? '이용약관'     : 'Terms')          + '</a>' +
+      '<a href="/changelog.html">'    + (lang === 'ko' ? '업데이트'     : 'Changelog')      + '</a>' +
+    '</div>' +
     '<div class="footer-copy">' +
       f.mainText + '<br>' +
       tr(f.poweredBy) + '<br>' +

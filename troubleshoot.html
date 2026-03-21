@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YHJ00H7NBL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-YHJ00H7NBL');
+    (function(){var ref=document.referrer||'';var m={'chat.openai.com':'ChatGPT','perplexity.ai':'Perplexity','gemini.google.com':'Gemini','claude.ai':'Claude','copilot.microsoft.com':'Copilot'};for(var d in m){if(ref.indexOf(d)!==-1){gtag('event','ai_referral',{event_category:'GEO',ai_source:m[d],landing_page:location.pathname});break;}}})();
+  </script>
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","vkeren3kxo");
+  </script>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/favicon.ico">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="체인소맨캐릭터닮은꼴">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>카메라·업로드 오류 해결 가이드 | 체인소맨 캐릭터닮은꼴</title>
+  <meta name="description" content="체인소맨 캐릭터닮은꼴 AI 분석기 이용 중 발생하는 오류 해결 방법. 카메라가 켜지지 않을 때, 모델 로딩 오류, 업로드 실패, 모바일 문제 등 증상별 해결책을 안내합니다.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#090909">
+  <link rel="canonical" href="https://bs-pb2.pages.dev/troubleshoot.html">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://bs-pb2.pages.dev/troubleshoot.html">
+  <meta property="og:site_name" content="체인소맨 캐릭터닮은꼴">
+  <meta property="og:title" content="카메라·업로드 오류 해결 가이드 | 체인소맨 캐릭터닮은꼴">
+  <meta property="og:description" content="카메라가 켜지지 않을 때, 모델 로딩 오류, 업로드 실패, 모바일 문제 등 오류 해결 방법을 안내합니다.">
+  <meta property="og:image" content="https://bs-pb2.pages.dev/images/reze.png">
+  <meta property="og:locale" content="ko_KR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="카메라·업로드 오류 해결 가이드 | 체인소맨 캐릭터닮은꼴">
+  <meta name="twitter:description" content="카메라 오류, 모델 로딩 실패, 업로드 문제 해결 방법을 안내합니다.">
+  <meta name="twitter:image" content="https://bs-pb2.pages.dev/images/reze.png">
+  <meta property="og:image:type" content="image/png">
+  <meta name="keywords" content="체인소맨 캐릭터닮은꼴 오류, 카메라 안됨, 모델 로딩 실패, 업로드 오류, 모바일 카메라, 브라우저 권한">
+  <link rel="alternate" hreflang="ko" href="https://bs-pb2.pages.dev/troubleshoot.html">
+  <link rel="alternate" hreflang="x-default" href="https://bs-pb2.pages.dev/troubleshoot.html">
+  <meta name="google-adsense-account" content="ca-pub-9688338422874533">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9688338422874533" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://bs-pb2.pages.dev/troubleshoot.html",
+        "headline": "카메라·업로드 오류 해결 가이드",
+        "url": "https://bs-pb2.pages.dev/troubleshoot.html",
+        "inLanguage": "ko",
+        "datePublished": "2026-02-23",
+        "dateModified": "2026-03-21",
+        "author": {"@type": "Organization", "name": "체인소맨 캐릭터닮은꼴 팀"},
+        "publisher": {"@type": "Organization", "name": "체인소맨 캐릭터닮은꼴", "url": "https://bs-pb2.pages.dev/"},
+        "isPartOf": {"@type": "WebSite", "@id": "https://bs-pb2.pages.dev/#website"},
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "홈", "item": "https://bs-pb2.pages.dev/"},
+            {"@type": "ListItem", "position": 2, "name": "오류 해결", "item": "https://bs-pb2.pages.dev/troubleshoot.html"}
+          ]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "카메라 권한을 허용했는데도 카메라가 켜지지 않아요.",
+            "acceptedAnswer": {"@type": "Answer", "text": "다른 앱이나 탭에서 카메라를 이미 사용 중인 경우 충돌이 발생할 수 있습니다. 모든 카메라 관련 앱(화상회의, 다른 브라우저 탭 등)을 종료한 후 다시 시도해보세요. 그래도 안 된다면 브라우저를 완전히 종료 후 재시작하세요."}
+          },
+          {
+            "@type": "Question",
+            "name": "모델을 불러오는 중... 메시지가 오래 표시됩니다.",
+            "acceptedAnswer": {"@type": "Answer", "text": "AI 모델 파일은 약 5~15MB입니다. 인터넷 속도에 따라 10~30초 소요될 수 있습니다. 로딩 중에는 다른 페이지로 이동하지 마세요. 1분 이상 지속된다면 페이지를 새로고침(F5)한 후 다시 시도해보세요."}
+          },
+          {
+            "@type": "Question",
+            "name": "이미지를 업로드했는데 분석이 안 됩니다.",
+            "acceptedAnswer": {"@type": "Answer", "text": "지원 포맷(JPG, PNG, WEBP)인지 확인하세요. 파일 크기가 너무 크거나(50MB 이상), 파일이 손상된 경우 업로드가 실패할 수 있습니다. 스마트폰으로 찍은 일반 사진이라면 대부분 정상 처리됩니다."}
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <canvas id="bg-canvas"></canvas>
+
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a class="nav-logo" href="/">チェンソーマン</a>
+      <div class="nav-links">
+        <a href="/">홈</a>
+        <a href="/about.html">소개</a>
+        <a href="/contact.html">문의</a>
+        <a href="/privacy.html">개인정보</a>
+      </div>
+      <div class="lang-toggle">
+        <button class="lang-btn" data-lang="ko" onclick="setLang('ko')">KO</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+      </div>
+      <button class="nav-hamburger" aria-label="메뉴 열기" onclick="toggleNav()">☰</button>
+    </div>
+    <div class="nav-mobile" id="nav-mobile">
+      <a href="/">홈</a>
+      <a href="/about.html">소개</a>
+      <a href="/contact.html">문의</a>
+      <a href="/privacy.html">개인정보</a>
+      <div class="lang-toggle lang-toggle-mobile">
+        <button class="lang-btn" data-lang="ko" onclick="setLang('ko')">KO</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="page-wrapper">
+
+    <div class="page-hero anim-in">
+      <p class="page-eyebrow">Troubleshooting</p>
+      <h1 class="page-title">카메라·업로드 오류 해결 가이드</h1>
+      <p class="page-sub">증상별 원인과 해결책을 단계적으로 안내합니다</p>
+    </div>
+
+    <section class="key-takeaways" aria-label="오류 해결 핵심 요약">
+      <h2 class="kt-title">💡 Key Takeaways</h2>
+      <ul class="kt-list">
+        <li><strong>카메라 안 켜짐</strong> — 브라우저 권한 설정, 다른 앱 카메라 점유, HTTPS 환경 체크.</li>
+        <li><strong>모델 로딩 느림</strong> — 최초 접속 시 5~15MB 다운로드 정상. 1분 이상이면 새로고침.</li>
+        <li><strong>업로드 실패</strong> — JPG·PNG·WEBP만 지원. 파일 크기·손상 여부 확인.</li>
+        <li><strong>모바일 문제</strong> — iOS Safari 12+, Android Chrome 80+ 권장. 브라우저 업데이트 확인.</li>
+      </ul>
+    </section>
+
+    <div class="content-section anim-in" style="animation-delay:0.1s">
+      <h2>📷 문제 1: 카메라가 켜지지 않아요</h2>
+
+      <h3>증상</h3>
+      <p>카메라 탭에서 '분석 시작' 버튼을 눌렀을 때 카메라 화면이 나타나지 않거나, "카메라를 시작하세요" 안내 화면이 그대로 유지되는 경우.</p>
+
+      <h3>원인 1: 브라우저 카메라 권한이 차단됨</h3>
+      <p><strong>해결 방법:</strong></p>
+      <ul>
+        <li><strong>Chrome (PC/Android):</strong> 주소창 왼쪽 자물쇠 아이콘(🔒) 클릭 → 카메라 → "허용"으로 변경 → 페이지 새로고침</li>
+        <li><strong>Safari (iOS):</strong> 설정 앱 → Safari → 카메라 → "묻기" 또는 "허용"으로 변경 → 사이트 재방문</li>
+        <li><strong>Firefox:</strong> 주소창 왼쪽 차단 아이콘 클릭 → 카메라 권한 재설정 → 새로고침</li>
+        <li><strong>Edge:</strong> 주소창 자물쇠 아이콘 → 권한 → 카메라 허용</li>
+      </ul>
+
+      <h3>원인 2: 다른 앱이 카메라를 점유 중</h3>
+      <p>웹캠이나 카메라는 한 번에 하나의 앱/탭만 사용할 수 있습니다.</p>
+      <ul>
+        <li>Zoom, Teams, Meet 등 화상회의 앱을 모두 종료하세요.</li>
+        <li>다른 브라우저 탭에서 카메라를 쓰는 서비스가 없는지 확인하세요.</li>
+        <li>Windows: 작업 표시줄에서 카메라 앱이 실행 중이면 닫으세요.</li>
+        <li>모든 관련 앱 종료 후 브라우저를 완전히 재시작하세요.</li>
+      </ul>
+
+      <h3>원인 3: HTTP 환경에서 접속 (보안 오류)</h3>
+      <p>브라우저 보안 정책상 카메라 접근은 <strong>HTTPS</strong> 또는 <code>localhost</code>에서만 허용됩니다. 주소창이 <code>https://</code>로 시작하는지 확인하세요. <code>http://</code>인 경우 카메라를 사용할 수 없습니다.</p>
+
+      <h3>원인 4: 오래된 브라우저</h3>
+      <p>카메라 API(WebRTC)는 최신 브라우저에서만 안정적으로 동작합니다. Chrome 80+, Safari 12+, Firefox 75+, Edge 80+ 이상으로 업데이트하세요.</p>
+    </div>
+
+    <div class="content-section anim-in" style="animation-delay:0.15s">
+      <h2>⏳ 문제 2: 모델 로딩이 너무 오래 걸려요</h2>
+
+      <h3>증상</h3>
+      <p>"모델을 준비 중입니다..." 또는 "모델 불러오는 중..." 메시지가 1분 이상 지속됩니다.</p>
+
+      <h3>정상 로딩 시간</h3>
+      <ul>
+        <li><strong>빠른 인터넷 (50Mbps+):</strong> 3~10초</li>
+        <li><strong>일반 인터넷 (10Mbps):</strong> 10~25초</li>
+        <li><strong>느린 인터넷/모바일 데이터:</strong> 30~60초</li>
+        <li>두 번째 방문부터는 브라우저 캐시로 인해 더 빠릅니다.</li>
+      </ul>
+
+      <h3>해결 방법</h3>
+      <ul>
+        <li>인터넷 연결 상태를 확인하세요. Wi-Fi가 불안정하다면 재연결하세요.</li>
+        <li>1분 이상 대기 후에도 변화가 없으면 <strong>페이지를 새로고침(F5 또는 Ctrl+R)</strong>하세요.</li>
+        <li>브라우저 캐시를 지우고 재시도: Chrome은 Ctrl+Shift+Delete → 캐시된 이미지 및 파일 삭제.</li>
+        <li>VPN을 사용 중이라면 잠시 해제 후 시도해보세요. 일부 VPN이 CDN 연결을 방해할 수 있습니다.</li>
+        <li>회사·학교 네트워크의 방화벽이 jsdelivr.net 또는 teachablemachine.withgoogle.com을 차단하는 경우 Wi-Fi가 아닌 모바일 데이터로 시도해보세요.</li>
+      </ul>
+    </div>
+
+    <!-- AdSense 광고 -->
+    <div class="ad-container" aria-label="광고">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-9688338422874533"
+           data-ad-slot="AUTO_SLOT_ID"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <div class="content-section anim-in" style="animation-delay:0.2s">
+      <h2>🖼️ 문제 3: 이미지 업로드가 안 돼요</h2>
+
+      <h3>증상</h3>
+      <p>파일을 선택해도 미리보기가 뜨지 않거나, 분석 시작 버튼이 활성화되지 않는 경우.</p>
+
+      <h3>해결 방법</h3>
+      <ul>
+        <li><strong>파일 형식 확인:</strong> JPG(.jpg, .jpeg), PNG(.png), WEBP(.webp) 형식만 지원합니다. HEIC(아이폰 기본 포맷)나 BMP, TIFF 등은 지원하지 않습니다.</li>
+        <li><strong>HEIC 변환 (iPhone):</strong> 아이폰 설정 → 카메라 → 포맷 → "호환성 우선"으로 변경하면 이후 사진은 JPG로 저장됩니다. 또는 온라인 변환 도구로 HEIC → JPG 변환 후 업로드하세요.</li>
+        <li><strong>파일 크기:</strong> 매우 큰 파일(50MB 이상)은 처리 시간이 늘어날 수 있습니다. 일반적인 스마트폰 사진(2~10MB)은 문제없습니다.</li>
+        <li><strong>파일 손상:</strong> 파일 탐색기에서 해당 사진이 정상적으로 열리는지 먼저 확인하세요.</li>
+      </ul>
+
+      <h3>모바일 이미지 업로드 방법</h3>
+      <ul>
+        <li>업로드 영역을 탭하면 갤러리 또는 카메라 선택 메뉴가 나타납니다.</li>
+        <li>iOS에서 처음 업로드 시 사진 접근 권한 요청이 나타납니다. "허용"을 선택하세요.</li>
+        <li>Android에서 파일 피커가 열리지 않는 경우 브라우저 앱 권한(저장소/미디어)을 설정에서 확인하세요.</li>
+      </ul>
+    </div>
+
+    <div class="content-section anim-in" style="animation-delay:0.25s">
+      <h2>📱 문제 4: 모바일에서 화면이 이상하게 보여요</h2>
+
+      <h3>증상</h3>
+      <p>레이아웃이 깨지거나, 버튼이 너무 작거나, 텍스트가 겹쳐 보이는 경우.</p>
+
+      <h3>해결 방법</h3>
+      <ul>
+        <li><strong>브라우저 줌 초기화:</strong> 브라우저 설정에서 페이지 확대/축소를 100%로 초기화하세요.</li>
+        <li><strong>브라우저 업데이트:</strong> App Store 또는 Google Play에서 최신 버전으로 업데이트하세요.</li>
+        <li><strong>가로모드 시도:</strong> 스마트폰을 가로로 돌리면 AI 분석 카드 레이아웃이 더 잘 보이는 경우가 있습니다.</li>
+        <li><strong>Safari Private 모드 제한:</strong> iOS Safari의 프라이빗 탭에서는 일부 기능이 제한될 수 있습니다. 일반 탭에서 사용해보세요.</li>
+      </ul>
+
+      <h3>Samsung 인터넷 브라우저</h3>
+      <p>삼성 인터넷 브라우저도 지원하지만, 카메라 권한 처리 방식이 Chrome과 약간 다를 수 있습니다. 문제가 발생하면 Chrome 앱을 설치해 사용해보세요.</p>
+    </div>
+
+    <div class="content-section anim-in" style="animation-delay:0.28s">
+      <h2>🔍 문제 5: 분석 결과가 항상 같은 캐릭터만 나와요</h2>
+
+      <h3>증상</h3>
+      <p>여러 번 시도해도 특정 캐릭터가 계속 나오거나, 유사도가 100%에 가까운 극단적인 결과만 나옵니다.</p>
+
+      <h3>원인과 해결</h3>
+      <ul>
+        <li><strong>조명 편향:</strong> 특정 색온도나 밝기의 조명이 특정 캐릭터의 학습 데이터와 유사할 수 있습니다. 다른 조명 환경에서 시도해보세요.</li>
+        <li><strong>배경 영향:</strong> 배경의 색상이나 패턴이 분류에 영향을 줄 수 있습니다. 단순한 배경 앞에서 시도해보세요.</li>
+        <li><strong>표정 변화:</strong> 웃는 표정, 무표정, 놀란 표정 등 다양하게 시도해보세요.</li>
+        <li><strong>사진 교체:</strong> 다른 날, 다른 장소에서 찍은 사진으로 시도해보면 다른 결과를 얻을 수 있습니다.</li>
+      </ul>
+      <p>이는 오류가 아닌 정상 동작입니다. 엔터테인먼트 서비스이므로 다양하게 시도해보며 재미있게 즐기시기 바랍니다.</p>
+    </div>
+
+    <!-- Author Bio -->
+    <div class="author-bio anim-in" style="animation-delay:0.3s">
+      <div class="author-bio-avatar" aria-hidden="true">⛓️</div>
+      <div class="author-bio-info">
+        <p class="author-bio-name">체인소맨 캐릭터닮은꼴 팀</p>
+        <p class="author-bio-desc">이 문서에서 해결책을 찾지 못한 경우 문의 페이지를 통해 증상을 상세히 설명해 주시면 도움을 드리겠습니다.</p>
+        <p class="author-bio-meta">최종 수정일: <time datetime="2026-03-21">2026년 03월 21일</time> · <a href="/contact.html">문의하기</a></p>
+      </div>
+    </div>
+
+    <!-- AdSense 광고 -->
+    <div class="ad-container" aria-label="광고">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-9688338422874533"
+           data-ad-slot="AUTO_SLOT_ID"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="/">홈</a>
+      <a href="/about.html">소개</a>
+      <a href="/privacy.html">개인정보처리방침</a>
+      <a href="/contact.html">문의하기</a>
+    </div>
+    <div class="footer-links" style="margin-top:8px;">
+      <a href="/guide.html">사진 가이드</a>
+      <a href="/how-it-works.html">AI 원리</a>
+      <a href="/faq.html">FAQ</a>
+      <a href="/characters.html">캐릭터 도감</a>
+      <a href="/troubleshoot.html">오류 해결</a>
+      <a href="/terms.html">이용약관</a>
+      <a href="/changelog.html">업데이트</a>
+    </div>
+    <div class="footer-copy">
+      CHAINSAW MAN · CHARACTER ANALYZER<br>
+      체인소맨 © 후지모토 타츠키 / 集英社
+    </div>
+  </footer>
+
+  <style>
+    .share-float-p{position:fixed;right:16px;bottom:80px;z-index:200;display:none;flex-direction:column;align-items:center;gap:8px;}
+    .sfp-items{display:flex;flex-direction:column;gap:8px;opacity:0;transform:translateY(10px) scale(0.9);pointer-events:none;transition:all 0.25s cubic-bezier(0.16,1,0.3,1);}
+    .sfp-items.open{opacity:1;transform:translateY(0) scale(1);pointer-events:all;}
+    .sfp-main{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,#c0392b,#8b0000);border:none;color:#fff;font-size:20px;cursor:pointer;box-shadow:0 4px 20px rgba(192,57,43,0.5);transition:all .3s;display:flex;align-items:center;justify-content:center;}
+    .sfp-main:hover{transform:scale(1.1);}
+    .sfp-btn{width:38px;height:38px;border-radius:50%;border:none;font-size:14px;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;box-shadow:0 2px 10px rgba(0,0,0,.3);}
+    .sfp-btn:hover{transform:scale(1.12);}
+    #sfp-toast{position:fixed;bottom:140px;left:50%;transform:translateX(-50%);background:rgba(192,57,43,.95);color:#fff;padding:10px 22px;border-radius:20px;font-size:13px;z-index:300;opacity:0;pointer-events:none;transition:opacity .3s;white-space:nowrap;}
+  </style>
+  <div class="share-float-p" id="sfp-wrap">
+    <div class="sfp-items" id="sfp-items">
+      <button class="sfp-btn" style="background:#000;color:#fff;" onclick="sfpShare('twitter')" title="Twitter">𝕏</button>
+      <button class="sfp-btn" style="background:#1877f2;color:#fff;" onclick="sfpShare('facebook')" title="Facebook">f</button>
+      <button class="sfp-btn" style="background:#101010;color:#fff;border:1px solid rgba(255,255,255,.2);" onclick="sfpShare('threads')" title="Threads">⊕</button>
+      <button class="sfp-btn" style="background:rgba(20,10,35,.95);color:rgba(255,255,255,.8);border:1px solid rgba(255,255,255,.2);" onclick="sfpShare('copy')" title="링크복사">🔗</button>
+    </div>
+    <button class="sfp-main" id="sfp-main" onclick="toggleSfp()" title="공유">↗</button>
+  </div>
+  <div id="sfp-toast">✅ 링크가 복사됐어요!</div>
+  <script src="/i18n.js"></script>
+  <script>
+    function toggleNav() { document.getElementById('nav-mobile').classList.toggle('open'); }
+    document.addEventListener('click', (e) => { if (!e.target.closest('.site-nav')) document.getElementById('nav-mobile').classList.remove('open'); });
+    var _sfpOpen = false;
+    function toggleSfp(){_sfpOpen=!_sfpOpen;document.getElementById('sfp-items').classList.toggle('open',_sfpOpen);document.getElementById('sfp-main').textContent=_sfpOpen?'✕':'↗';}
+    function sfpShare(t){var u='https://bs-pb2.pages.dev/troubleshoot.html';var tx='🔧 체인소맨 캐릭터닮은꼴 AI - 오류 해결 가이드\n'+u;if(t==='twitter')window.open('https://twitter.com/intent/tweet?text='+encodeURIComponent(tx),'_blank','width=600,height=440,noopener');else if(t==='facebook')window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(u),'_blank','width=600,height=440,noopener');else if(t==='threads')window.open('https://www.threads.net/intent/post?text='+encodeURIComponent(tx),'_blank','width=600,height=440,noopener');else if(t==='copy'){if(navigator.clipboard)navigator.clipboard.writeText(u).then(showSfpToast);else{var a=document.createElement('textarea');a.value=u;document.body.appendChild(a);a.select();document.execCommand('copy');document.body.removeChild(a);showSfpToast();}}}
+    function showSfpToast(){var t=document.getElementById('sfp-toast');t.style.opacity='1';setTimeout(function(){t.style.opacity='0';},2500);}
+    window.addEventListener('scroll',function(){var w=document.getElementById('sfp-wrap');if(w)w.style.display=window.scrollY>200?'flex':'none';});
+    document.addEventListener('click',function(e){if(_sfpOpen&&!e.target.closest('.share-float-p')){_sfpOpen=false;document.getElementById('sfp-items').classList.remove('open');document.getElementById('sfp-main').textContent='↗';}});
+    (function() {
+      const canvas = document.getElementById('bg-canvas'); const ctx = canvas.getContext('2d');
+      let W, H, particles = [];
+      function resize() { W = canvas.width = window.innerWidth; H = canvas.height = window.innerHeight; }
+      resize(); window.addEventListener('resize', resize);
+      class Particle {
+        constructor() { this.reset(true); }
+        reset(init) { this.x=Math.random()*W; this.y=init?Math.random()*H:H+10; this.size=Math.random()*2+0.5; this.speedY=-(Math.random()*0.5+0.15); this.speedX=(Math.random()-0.5)*0.25; this.opacity=Math.random()*0.4+0.08; this.color=Math.random()>0.5?`rgba(139,92,246,${this.opacity})`:`rgba(34,211,238,${this.opacity*0.6})`; }
+        update() { this.x+=this.speedX; this.y+=this.speedY; if(this.y<-10)this.reset(); }
+        draw() { ctx.beginPath(); ctx.arc(this.x,this.y,this.size,0,Math.PI*2); ctx.fillStyle=this.color; ctx.fill(); }
+      }
+      for(let i=0;i<60;i++)particles.push(new Particle());
+      (function animate(){ctx.clearRect(0,0,W,H);particles.forEach(p=>{p.update();p.draw();});requestAnimationFrame(animate);})();
+    })();
+  </script>
+</body>
+</html>
